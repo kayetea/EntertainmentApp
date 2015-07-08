@@ -3,7 +3,7 @@ using System.Collections;
 using System;
 using System.IO;
 
-public class OpenPDF : MonoBehaviour {
+public class _OpenPDF : MonoBehaviour {
 	#if !UNITY_WEBPLAYER
 	public string fileName;
 	private string path;
