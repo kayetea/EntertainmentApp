@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: 9cadc2e81f3721148a08e6097a93cd87
+timeCreated: 1431543844
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: baseCovering
+    100002: //RootNode
+    100004: handles
+    100006: metalSheet
+    100008: pitch
+    100010: planetary
+    100012: roll
+    100014: roll_blue
+    100016: yaw
+    100018: yaw_silver
+    400000: baseCovering
+    400002: //RootNode
+    400004: handles
+    400006: metalSheet
+    400008: pitch
+    400010: planetary
+    400012: roll
+    400014: roll_blue
+    400016: yaw
+    400018: yaw_silver
+    2300000: baseCovering
+    2300002: //RootNode
+    2300004: handles
+    2300006: metalSheet
+    2300008: pitch
+    2300010: planetary
+    2300012: roll
+    2300014: roll_blue
+    2300016: yaw
+    2300018: yaw_silver
+    3300000: baseCovering
+    3300002: //RootNode
+    3300004: handles
+    3300006: metalSheet
+    3300008: pitch
+    3300010: planetary
+    3300012: roll
+    3300014: roll_blue
+    3300016: yaw
+    3300018: yaw_silver
+    4300000: stationary
+    4300002: baseCovering
+    4300004: planetary
+    4300006: handles
+    4300008: metalSheet
+    4300010: yaw
+    4300012: yaw_silver
+    4300014: roll
+    4300016: pitch
+    4300018: roll_blue
+    7400000: gl4000_anim
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: gl4000_anim
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 600
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: baseCovering
+        weight: 1
+      - path: planetary
+        weight: 1
+      - path: planetary/handles
+        weight: 1
+      - path: planetary/metalSheet
+        weight: 1
+      - path: planetary/yaw
+        weight: 1
+      - path: planetary/yaw/roll
+        weight: 1
+      - path: planetary/yaw/roll/pitch
+        weight: 1
+      - path: planetary/yaw/roll/roll_blue
+        weight: 1
+      - path: planetary/yaw/yaw_silver
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 14
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

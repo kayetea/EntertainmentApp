@@ -1,0 +1,332 @@
+fileFormatVersion: 2
+guid: ea889348b7cc09a4d890970772d5fc2a
+timeCreated: 1431527616
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: CenterPlatform
+    100002: CornerArches
+    100004: CrossSections
+    100006: FloorBeams
+    100008: FloorBoards
+    100010: //RootNode
+    100012: HatchParts
+    100014: Heave
+    100016: HeaveRails
+    100018: HeaveRig1_DarkMetal
+    100020: HeaveRig1_ShinyMetal
+    100022: HeaveRig2_DarkMetal
+    100024: HeaveRig2_ShinyMetal
+    100026: InteriorPaneling
+    100028: Module
+    100030: Pitch
+    100032: PlanCasingBottoms
+    100034: PlanCasingTop01
+    100036: PlanCasingTop02
+    100038: PlanetaryMotor
+    100040: Railings
+    100042: RailRigs
+    100044: Roll
+    100046: RollHubs
+    100048: RollTop
+    100050: Shwoop
+    100052: Side
+    100054: SledFrame
+    100056: Sway
+    100058: SwayHeavePistons
+    100060: SwaySkates
+    100062: SwaySlides
+    100064: topPieces
+    100066: Wingss
+    100068: Yaw
+    100070: YawArm
+    100072: YawHubs
+    400000: CenterPlatform
+    400002: CornerArches
+    400004: CrossSections
+    400006: FloorBeams
+    400008: FloorBoards
+    400010: //RootNode
+    400012: HatchParts
+    400014: Heave
+    400016: HeaveRails
+    400018: HeaveRig1_DarkMetal
+    400020: HeaveRig1_ShinyMetal
+    400022: HeaveRig2_DarkMetal
+    400024: HeaveRig2_ShinyMetal
+    400026: InteriorPaneling
+    400028: Module
+    400030: Pitch
+    400032: PlanCasingBottoms
+    400034: PlanCasingTop01
+    400036: PlanCasingTop02
+    400038: PlanetaryMotor
+    400040: Railings
+    400042: RailRigs
+    400044: Roll
+    400046: RollHubs
+    400048: RollTop
+    400050: Shwoop
+    400052: Side
+    400054: SledFrame
+    400056: Sway
+    400058: SwayHeavePistons
+    400060: SwaySkates
+    400062: SwaySlides
+    400064: topPieces
+    400066: Wingss
+    400068: Yaw
+    400070: YawArm
+    400072: YawHubs
+    2300000: CenterPlatform
+    2300002: CornerArches
+    2300004: CrossSections
+    2300006: FloorBeams
+    2300008: FloorBoards
+    2300010: HatchParts
+    2300012: HeaveRails
+    2300014: HeaveRig1_DarkMetal
+    2300016: HeaveRig1_ShinyMetal
+    2300018: HeaveRig2_DarkMetal
+    2300020: HeaveRig2_ShinyMetal
+    2300022: InteriorPaneling
+    2300024: Module
+    2300026: PlanCasingBottoms
+    2300028: PlanCasingTop01
+    2300030: PlanCasingTop02
+    2300032: PlanetaryMotor
+    2300034: Railings
+    2300036: RailRigs
+    2300038: RollHubs
+    2300040: RollTop
+    2300042: Shwoop
+    2300044: Side
+    2300046: SwayHeavePistons
+    2300048: SwaySkates
+    2300050: SwaySlides
+    2300052: topPieces
+    2300054: Wingss
+    2300056: YawArm
+    2300058: YawHubs
+    3300000: CenterPlatform
+    3300002: CornerArches
+    3300004: CrossSections
+    3300006: FloorBeams
+    3300008: FloorBoards
+    3300010: HatchParts
+    3300012: HeaveRails
+    3300014: HeaveRig1_DarkMetal
+    3300016: HeaveRig1_ShinyMetal
+    3300018: HeaveRig2_DarkMetal
+    3300020: HeaveRig2_ShinyMetal
+    3300022: InteriorPaneling
+    3300024: Module
+    3300026: PlanCasingBottoms
+    3300028: PlanCasingTop01
+    3300030: PlanCasingTop02
+    3300032: PlanetaryMotor
+    3300034: Railings
+    3300036: RailRigs
+    3300038: RollHubs
+    3300040: RollTop
+    3300042: Shwoop
+    3300044: Side
+    3300046: SwayHeavePistons
+    3300048: SwaySkates
+    3300050: SwaySlides
+    3300052: topPieces
+    3300054: Wingss
+    3300056: YawArm
+    3300058: YawHubs
+    4300000: HatchParts
+    4300002: Module
+    4300004: YawArm
+    4300006: RollTop
+    4300008: YawHubs
+    4300010: RollHubs
+    4300012: HeaveRig2_DarkMetal
+    4300014: HeaveRig2_ShinyMetal
+    4300016: HeaveRig1_DarkMetal
+    4300018: HeaveRig1_ShinyMetal
+    4300020: CrossSections
+    4300022: Shwoop
+    4300024: SwaySkates
+    4300026: Wingss
+    4300028: Side
+    4300030: topPieces
+    4300032: HeaveRails
+    4300034: SwayHeavePistons
+    4300036: CornerArches
+    4300038: PlanCasingTop02
+    4300040: PlanCasingTop01
+    4300042: PlanCasingBottoms
+    4300044: CenterPlatform
+    4300046: PlanetaryMotor
+    4300048: FloorBoards
+    4300050: FloorBeams
+    4300052: InteriorPaneling
+    4300054: SwaySlides
+    4300056: RailRigs
+    4300058: Railings
+    7400000: gl6000_anim
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: gl6000_anim
+      takeName: GL-6000_unityCondense
+      firstFrame: 0
+      lastFrame: 4664
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CenterPlatform
+        weight: 1
+      - path: FloorBeams
+        weight: 1
+      - path: FloorBoards
+        weight: 1
+      - path: InteriorPaneling
+        weight: 1
+      - path: PlanCasingBottoms
+        weight: 1
+      - path: PlanCasingTop01
+        weight: 1
+      - path: PlanCasingTop02
+        weight: 1
+      - path: PlanetaryMotor
+        weight: 1
+      - path: Railings
+        weight: 1
+      - path: RailRigs
+        weight: 1
+      - path: Sway
+        weight: 1
+      - path: Sway/Heave
+        weight: 1
+      - path: Sway/Heave/HeaveRig1_DarkMetal
+        weight: 1
+      - path: Sway/Heave/HeaveRig1_ShinyMetal
+        weight: 1
+      - path: Sway/Heave/HeaveRig2_DarkMetal
+        weight: 1
+      - path: Sway/Heave/HeaveRig2_ShinyMetal
+        weight: 1
+      - path: Sway/Heave/Roll
+        weight: 1
+      - path: Sway/Heave/Roll/RollTop
+        weight: 1
+      - path: Sway/Heave/Roll/Yaw
+        weight: 1
+      - path: Sway/Heave/Roll/Yaw/Pitch
+        weight: 1
+      - path: Sway/Heave/Roll/Yaw/Pitch/HatchParts
+        weight: 1
+      - path: Sway/Heave/Roll/Yaw/Pitch/Module
+        weight: 1
+      - path: Sway/Heave/Roll/Yaw/YawArm
+        weight: 1
+      - path: Sway/Heave/Roll/YawHubs
+        weight: 1
+      - path: Sway/Heave/RollHubs
+        weight: 1
+      - path: Sway/SledFrame
+        weight: 1
+      - path: Sway/SledFrame/CornerArches
+        weight: 1
+      - path: Sway/SledFrame/CrossSections
+        weight: 1
+      - path: Sway/SledFrame/HeaveRails
+        weight: 1
+      - path: Sway/SledFrame/Shwoop
+        weight: 1
+      - path: Sway/SledFrame/Side
+        weight: 1
+      - path: Sway/SledFrame/SwayHeavePistons
+        weight: 1
+      - path: Sway/SledFrame/SwaySkates
+        weight: 1
+      - path: Sway/SledFrame/topPieces
+        weight: 1
+      - path: Sway/SledFrame/Wingss
+        weight: 1
+      - path: SwaySlides
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3.5
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
