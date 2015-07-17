@@ -10,50 +10,49 @@ public class LoopImageStack : MonoBehaviour {
 
 	public int prefabHeight;
 
-
-	// Use this for initialization
 	void Start () {
 		//create first stack and parent it to canvas
 		prefab1 = Instantiate(scrollImagePrefab) as GameObject;
 		prefab1.transform.SetParent(this.transform, false);
 
+		//creates second stack, parents to canvas, and places under prefab1
 		prefab2 = Instantiate(scrollImagePrefab) as GameObject;
 		prefab2.transform.SetParent(this.transform, false);
-		Vector3 pos = prefab2.transform.position;
+		Vector2 pos = prefab2.GetComponent<RectTransform>().anchoredPosition;
 		pos.y -= prefabHeight;
-		prefab2.transform.position = pos;
+		prefab2.GetComponent<RectTransform>().anchoredPosition = pos;
+
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		//MOVE IMAGES UPWARDS OVER TIME
-
 		Move(prefab1);
 		Move(prefab2);
 
 		//MOVE TOP STACK TO BOTTOM WHEN OFF SCREEN
-		if(prefab1.transform.position.y > prefabHeight*2)
+		if(prefab1.GetComponent<RectTransform>().anchoredPosition.y > prefabHeight)
 		{
-			Vector3 pos1 = prefab1.transform.position;
-			Vector3 pos2 = prefab2.transform.position;
+			Vector2 pos1 = prefab1.GetComponent<RectTransform>().anchoredPosition;
+			Vector2 pos2 = prefab2.GetComponent<RectTransform>().anchoredPosition;
 			pos1.y = pos2.y - prefabHeight;
-			prefab1.transform.position = pos1;
+			prefab1.GetComponent<RectTransform>().anchoredPosition = pos1;
 		}
 
-		if(prefab2.transform.position.y > prefabHeight*2)
+		if(prefab2.GetComponent<RectTransform>().anchoredPosition.y > prefabHeight)
 		{
-			Vector3 pos2 = prefab2.transform.position;
-			Vector3 pos1 = prefab1.transform.position;
+			Vector2 pos2 = prefab2.GetComponent<RectTransform>().anchoredPosition;
+			Vector2 pos1 = prefab1.GetComponent<RectTransform>().anchoredPosition;
 			pos2.y = pos1.y - prefabHeight;
-			prefab2.transform.position = pos2;
+			prefab2.GetComponent<RectTransform>().anchoredPosition = pos2;
 		}
 
 	}
 
 	private void Move(GameObject prefab){
-		Vector3 pos = prefab.transform.position;
-		pos.y += 1;
-		prefab.transform.position = pos;
+		Vector2 pos = prefab.GetComponent<RectTransform>().anchoredPosition;
+		pos.y += 1 * speed * Time.deltaTime;
+		prefab.GetComponent<RectTransform>().anchoredPosition = pos;
 	}
+	
 
 }
