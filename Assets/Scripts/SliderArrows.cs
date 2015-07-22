@@ -8,6 +8,9 @@ public class SliderArrows : MonoBehaviour {
 	public Button otherArrow;
 	public float Step = 0.1f;
 
+	public float HoldFrequency = 0.1f;
+	public bool incrementBool;
+
 	void Start()
 	{
 		scrollTarget.value = 0;
@@ -16,8 +19,9 @@ public class SliderArrows : MonoBehaviour {
 
 	public void Increment()
 	{
-			GetComponent<Button>().interactable = scrollTarget.value != 1;
-			otherArrow.interactable = true;
+		scrollTarget.value = Mathf.Clamp(scrollTarget.value + Step, 0, 1);
+		GetComponent<Button>().interactable = scrollTarget.value != 1;
+		otherArrow.interactable = true;
 	}
 	
 	public void Decrement()
@@ -27,4 +31,24 @@ public class SliderArrows : MonoBehaviour {
 		otherArrow.interactable = true;
 	}
 
+
+	public void OnPointerDown(bool increment)
+	{
+		if (increment)
+		{
+			incrementBool = true;
+		}
+		InvokeRepeating("IncrementDecrementSequence", 0.5f, HoldFrequency);
+	}
+	
+	public void OnPointerUp()
+	{
+		CancelInvoke("IncrementDecrementSequence");
+	}
+	
+	public void IncrementDecrementSequence()
+	{
+		if(incrementBool) Increment();
+		else          Decrement();
+	}
 }
