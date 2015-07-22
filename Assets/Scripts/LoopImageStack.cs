@@ -49,10 +49,16 @@ public class LoopImageStack : MonoBehaviour {
 	}
 
 	private void Move(GameObject prefab){
+		//move object upwards over time * speed
 		Vector2 pos = prefab.GetComponent<RectTransform>().anchoredPosition;
 		pos.y += 1 * speed * Time.deltaTime;
+
+		//make sure DragImages.cs doesn't move the stack in the x direction
+		pos.x = 0;
+
 		prefab.GetComponent<RectTransform>().anchoredPosition = pos;
+
+
 	}
-	
 
 }

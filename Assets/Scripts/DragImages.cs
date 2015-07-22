@@ -3,7 +3,7 @@
 public class DragImages : MonoBehaviour
 {
 	// This stores the layers we want the raycast to hit (make sure this GameObject's layer is included!)
-	public LayerMask mask = UnityEngine.Physics.DefaultRaycastLayers;
+	//public LayerMask mask = UnityEngine.Physics.DefaultRaycastLayers;
 	
 	// This stores the finger that's currently dragging this GameObject
 	private Lean.LeanFinger draggingFinger;
@@ -38,7 +38,9 @@ public class DragImages : MonoBehaviour
 	
 	public void OnFingerDown(Lean.LeanFinger finger)
 	{
-		Debug.Log("FINGER DOWN");
+		draggingFinger = finger;
+
+		/*Debug.Log("FINGER DOWN");
 
 		// Raycast information
 		var ray = finger.GetRay();
@@ -57,7 +59,7 @@ public class DragImages : MonoBehaviour
 				// Set the current finger to this one
 				draggingFinger = finger;
 			}
-		}
+		}*/
 	}
 	
 	public void OnFingerUp(Lean.LeanFinger finger)

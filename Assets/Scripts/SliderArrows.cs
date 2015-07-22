@@ -11,13 +11,13 @@ public class SliderArrows : MonoBehaviour {
 	void Start()
 	{
 		scrollTarget.value = 0;
+
 	}
 
 	public void Increment()
 	{
-		scrollTarget.value = Mathf.Clamp(scrollTarget.value + Step, 0, 1);
-		GetComponent<Button>().interactable = scrollTarget.value != 1;
-		otherArrow.interactable = true;
+			GetComponent<Button>().interactable = scrollTarget.value != 1;
+			otherArrow.interactable = true;
 	}
 	
 	public void Decrement()
