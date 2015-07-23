@@ -7,7 +7,13 @@ public class DragImages : MonoBehaviour
 	
 	// This stores the finger that's currently dragging this GameObject
 	private Lean.LeanFinger draggingFinger;
-	
+
+	private GameObject colliderObject;
+
+	void Start(){
+		colliderObject = transform.parent.gameObject;
+	}
+
 	protected virtual void OnEnable()
 	{
 		// Hook into the OnFingerDown event
@@ -26,8 +32,9 @@ public class DragImages : MonoBehaviour
 		// Unhook the OnFingerUp event
 		Lean.LeanTouch.OnFingerUp -= OnFingerUp;
 	}
+	
 
-	protected virtual void LateUpdate()
+	protected virtual void Update()
 	{
 		// If there is an active finger, move this GameObject based on it
 		if (draggingFinger != null)
@@ -40,13 +47,13 @@ public class DragImages : MonoBehaviour
 	{
 		draggingFinger = finger;
 
-		/*Debug.Log("FINGER DOWN");
-
+		/*
 		// Raycast information
 		var ray = finger.GetRay();
 		var hit = default(RaycastHit);
 
 		Debug.Log(Physics.Raycast(ray, out hit, float.PositiveInfinity, mask));
+		Debug.Log ("ray= " + ray + "  hit= " + hit + "   mask= " + mask);
 		
 		// Was this finger pressed down on a collider?
 		if (Physics.Raycast(ray, out hit, float.PositiveInfinity, mask) == true)
