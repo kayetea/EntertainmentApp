@@ -11,6 +11,12 @@ public class PreviousScene : MonoBehaviour {
 		loadScene = ApplicationModel.previousLevel;
 		ApplicationModel.previousLevel = Application.loadedLevelName;
 
-		Application.LoadLevel(loadScene);
+		StartCoroutine(LevelLoad(loadScene));
+	}
+	
+	//load level after one second delay
+	IEnumerator LevelLoad(string name){
+		yield return new WaitForSeconds(1f);
+		Application.LoadLevel(name);
 	}
 }

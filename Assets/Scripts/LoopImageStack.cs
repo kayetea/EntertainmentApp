@@ -1,4 +1,21 @@
-﻿using UnityEngine;
+﻿/*
+LOOPIMAGESTACK.CS
+
+ Creates two prefabs of the "image stacks" and loops them seamlessly 
+ while moving them  upward over time. 
+
+REQUIREMENTS:
+- Attach to empty panel. 
+
+- Build your prefab by parenting images stacked on top of eachother. Make
+sure to set the height of the prefab as the total height of all of the images 
+combined. Then fill in this height number as the variable on this script
+
+- Set the speed you'd like the stack to move at. I started at 200 and moved it down to
+a comfortable speed. 
+*/
+
+using UnityEngine;
 using System.Collections;
 
 public class LoopImageStack : MonoBehaviour {

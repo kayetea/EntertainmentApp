@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class OpenScene : MonoBehaviour {
 
@@ -11,7 +12,14 @@ public class OpenScene : MonoBehaviour {
 		ApplicationModel.previousLevel = Application.loadedLevelName;
 		Debug.Log ("LOAD NEW SCENE");
 		ApplicationModel.currentLevel = levelName;
-		Application.LoadLevel (levelName);
+
+		StartCoroutine(LevelLoad(levelName));
+	}
+
+	//load level after one second delay
+	IEnumerator LevelLoad(string name){
+		yield return new WaitForSeconds(1f);
+		Application.LoadLevel(name);
 	}
 
 }
