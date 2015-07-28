@@ -170,14 +170,51 @@ ModelImporter:
     4300056: RailRigs
     4300058: Railings
     7400000: gl6000_anim
+    7400002: gl6000_anim //// Planetary
     9500000: //RootNode
     11100000: //RootNode
+    11100002: CenterPlatform
+    11100004: CornerArches
+    11100006: CrossSections
+    11100008: FloorBeams
+    11100010: FloorBoards
+    11100012: HatchParts
+    11100014: Heave
+    11100016: HeaveRails
+    11100018: HeaveRig1_DarkMetal
+    11100020: HeaveRig1_ShinyMetal
+    11100022: HeaveRig2_DarkMetal
+    11100024: HeaveRig2_ShinyMetal
+    11100026: InteriorPaneling
+    11100028: Module
+    11100030: Pitch
+    11100032: PlanCasingBottoms
+    11100034: PlanCasingTop01
+    11100036: PlanCasingTop02
+    11100038: PlanetaryMotor
+    11100040: Railings
+    11100042: RailRigs
+    11100044: Roll
+    11100046: RollHubs
+    11100048: RollTop
+    11100050: Shwoop
+    11100052: Side
+    11100054: SledFrame
+    11100056: Sway
+    11100058: SwayHeavePistons
+    11100060: SwaySkates
+    11100062: SwaySlides
+    11100064: topPieces
+    11100066: Wingss
+    11100068: Yaw
+    11100070: YawArm
+    11100072: YawHubs
   materials:
     importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
-    legacyGenerateAnimations: 4
+    legacyGenerateAnimations: 1
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
