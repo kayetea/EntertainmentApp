@@ -22,12 +22,14 @@ public class LoopImageStack : MonoBehaviour {
 
 	public float speed = 1;
 	public GameObject scrollImagePrefab;
-	private GameObject prefab1;
+	public GameObject prefab1;
 	private GameObject prefab2;
 
-	public int prefabHeight;
+	private float prefabHeight;
 
-	void Start () {
+	public void Start () {
+		prefabHeight = scrollImagePrefab.GetComponent<RectTransform>().rect.height;
+
 		//create first stack and parent it to canvas
 		prefab1 = Instantiate(scrollImagePrefab) as GameObject;
 		prefab1.transform.SetParent(this.transform, false);
@@ -41,7 +43,14 @@ public class LoopImageStack : MonoBehaviour {
 
 	}
 
+
 	void Update () {
+
+		if(!prefab1 && !prefab2)
+		{
+			Start ();
+		}
+
 		//MOVE IMAGES UPWARDS OVER TIME
 		Move(prefab1);
 		Move(prefab2);
@@ -74,8 +83,13 @@ public class LoopImageStack : MonoBehaviour {
 		//pos.x = 0;
 
 		prefab.GetComponent<RectTransform>().anchoredPosition = pos;
+	}
 
-
+	public void RemoveStacks(){
+		if( prefab1 && prefab2){
+			Destroy(this.prefab1);
+			Destroy(this.prefab2);
+		}
 	}
 
 }
