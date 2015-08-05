@@ -15,7 +15,7 @@ public class ChangeScreen : MonoBehaviour {
 	private Vector2 origin = new Vector2(0,0);
 
 	//Environment Variables
-	private Texture background;
+	private Texture2D background;
 	private string title;
 	private string subtitle;
 	private string infoText;
@@ -73,7 +73,6 @@ public class ChangeScreen : MonoBehaviour {
 
 		//move previous screen off screen
 		currentScreen.GetComponent<RectTransform>().anchoredPosition = offScreen;
-
 		//move new screen to origin and assign as current
 		newScreen.GetComponent<RectTransform>().anchoredPosition = origin;
 		prevScreen = currentScreen;
@@ -106,44 +105,44 @@ public class ChangeScreen : MonoBehaviour {
 		switch (page)
 		{
 		case "Ocean":
-			background = Resources.Load("BgImages/ocean-background") as Texture;
+			background = Resources.Load("BgImages/ocean-background") as Texture2D;
 			title = "OCEAN";
 			subtitle = "SUBMARINE - BOATS";
-			infoText = "Please provide a little explaination of what types of experiences we can provide to create an ocean experience.";
+			infoText = "Sail, submerge, or splash across the vast blue ocean. From the deepest depths to the shimmering surface, let us bring your adventure to motion by combining stunning visuals and sounds, with one of our popular immersive motion or non-motion devices below.  ";
 			scrollImage = Resources.Load("PhotoStacks/Ocean-Photo-Stack") as GameObject;
 			break;
 		case "Land":
-			background = Resources.Load("BgImages/land-background") as Texture;
+			background = Resources.Load("BgImages/land-background") as Texture2D;
 			title = "LAND";
-			subtitle = "SUBMARINE - BOATS";
-			infoText = "Please provide a little explaination of what types of experiences we can provide to create an ocean experience.";
+			subtitle = "RACE CARS - MOTORCYCLES - TRUCKS";
+			infoText = "Race or rocket past a stadium of your fans, the countryside, or exotic terrain. Able to model your 4x4 to elite jet racing cars, let us bring your adventure to motion! With stunning visuals and sound, please choose an immersive experience platform or device below.";
 			scrollImage = Resources.Load("PhotoStacks/Land-Photo-Stack") as GameObject;
 			break;
 		case "Aviation":
-			background = Resources.Load("BgImages/aviation-background") as Texture;
+			background = Resources.Load("BgImages/aviation-background") as Texture2D;
 			title = "AVIATION";
 			subtitle = "JET - AIRCRAFT - HELICOPTER";
-			infoText = "Please provide a little explaination of what types of experiences we can provide to create an ocean experience.";
+			infoText = "From prop planes to jet fighters, and everything in between, we know the air above calls your name. We bring your aircraft (and adventures!) to life. With aerodynamics models, stunning visuals, surround sound, and full immersive motion (or non-motion) platform, we’ll get you back in the sky real soon…  ";
 			scrollImage = Resources.Load("PhotoStacks/Aviation-Photo-Stack") as GameObject;
 			break;
 		case "Space":
-			background = Resources.Load("BgImages/space-background") as Texture;
+			background = Resources.Load("BgImages/space-background") as Texture2D;
 			title = "SPACE";
 			subtitle = "SUBORBITAL - ORBITAL";
-			infoText = "Please provide a little explaination of what types of experiences we can provide to create an ocean experience.";
+			infoText = "The final frontier…experience the breathtaking sensation of rocketing towards the stars and then silent serenity as you gaze upon the curvature of the earth. From spacecraft to space stations, let us bring your unique space adventure to motion by combining stunning visuals and sounds, with one of our popular immersive motion or non-motion devices below.  ";
 			scrollImage = Resources.Load("PhotoStacks/Space-Photo-Stack") as GameObject;
 			break;
 		case "Beyond":
-			background = Resources.Load("BgImages/beyond-background") as Texture;
+			background = Resources.Load("BgImages/beyond-background") as Texture2D;
 			title = "BEYOND";
 			subtitle = "MARS - ASTEROIDS - DEEP SPACE";
-			infoText = "Please provide a little explaination of what types of experiences we can provide to create an ocean experience.";
+			infoText = "Mars, Asteroids, and now Pluto. They are beckoning our arrival. From Martian rovers to starships of the future, let us bring your galactic adventure to motion by combining stunning visuals and sounds, with one of our popular immersive motion or non-motion devices below.";
 			scrollImage = Resources.Load("PhotoStacks/Beyond-Photo-Stack") as GameObject;
 			break;
 		}
 
 		//set background
-		transform.Find("EnvironmentPanel/Background").GetComponent<RawImage>().texture = background;
+		transform.Find("BackgroundCamera/BackgroundImage").GetComponent<SpriteRenderer>().sprite = Sprite.Create (background, new Rect(0, 0, 2048, 1536), new Vector2(0.5f,0.5f));
 		//set title panel (title, subtitle, text block)
 		transform.Find("EnvironmentPanel/Title Panel/Title").GetComponent<Text>().text = title;
 		transform.Find("EnvironmentPanel/Title Panel/Subtitle").GetComponent<Text>().text = subtitle;
