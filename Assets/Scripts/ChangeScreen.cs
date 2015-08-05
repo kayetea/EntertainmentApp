@@ -21,10 +21,11 @@ public class ChangeScreen : MonoBehaviour {
 	private string infoText;
 	private GameObject scrollImage;
 
+
 	//Product Variables
 	private GameObject mediaPanel;
 	
-	[Header("Ocean")]
+	/*[Header("Ocean")]
 	public Texture oceanbg;
 	public GameObject oceanScroll;
 	[Header("Land")]
@@ -50,7 +51,7 @@ public class ChangeScreen : MonoBehaviour {
 	public GameObject ipt3Media;
 	public GameObject xforceMedia;
 	public GameObject xspeedMedia;
-	public GameObject xvectorMedia;
+	public GameObject xvectorMedia;*/
 
 	void Start () {
 		currentScreen = GameObject.Find("HomePanel");
@@ -79,6 +80,7 @@ public class ChangeScreen : MonoBehaviour {
 		currentScreen = newScreen;
 
 		//MAKE SMARTER AND KNOW WHAT PAGE IT IS COMING FROM
+
 		//remove any scrollstacks & media panels
 		transform.Find("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().RemoveStacks();
 		transform.Find("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().enabled = false;
@@ -104,39 +106,39 @@ public class ChangeScreen : MonoBehaviour {
 		switch (page)
 		{
 		case "Ocean":
-			background = oceanbg;
+			background = Resources.Load("BgImages/ocean-background") as Texture;
 			title = "OCEAN";
 			subtitle = "SUBMARINE - BOATS";
 			infoText = "Please provide a little explaination of what types of experiences we can provide to create an ocean experience.";
-			scrollImage = oceanScroll;
+			scrollImage = Resources.Load("PhotoStacks/Ocean-Photo-Stack") as GameObject;
 			break;
 		case "Land":
-			background = landbg;
+			background = Resources.Load("BgImages/land-background") as Texture;
 			title = "LAND";
 			subtitle = "SUBMARINE - BOATS";
 			infoText = "Please provide a little explaination of what types of experiences we can provide to create an ocean experience.";
-			scrollImage = landScroll;
+			scrollImage = Resources.Load("PhotoStacks/Land-Photo-Stack") as GameObject;
 			break;
 		case "Aviation":
-			background = aviationbg;
+			background = Resources.Load("BgImages/aviation-background") as Texture;
 			title = "AVIATION";
 			subtitle = "JET - AIRCRAFT - HELICOPTER";
 			infoText = "Please provide a little explaination of what types of experiences we can provide to create an ocean experience.";
-			scrollImage = aviationScroll;
+			scrollImage = Resources.Load("PhotoStacks/Aviation-Photo-Stack") as GameObject;
 			break;
 		case "Space":
-			background = spacebg;
+			background = Resources.Load("BgImages/space-background") as Texture;
 			title = "SPACE";
 			subtitle = "SUBORBITAL - ORBITAL";
 			infoText = "Please provide a little explaination of what types of experiences we can provide to create an ocean experience.";
-			scrollImage = spaceScroll;
+			scrollImage = Resources.Load("PhotoStacks/Space-Photo-Stack") as GameObject;
 			break;
 		case "Beyond":
-			background = beyondbg;
+			background = Resources.Load("BgImages/beyond-background") as Texture;
 			title = "BEYOND";
 			subtitle = "MARS - ASTEROIDS - DEEP SPACE";
 			infoText = "Please provide a little explaination of what types of experiences we can provide to create an ocean experience.";
-			scrollImage = beyondScroll;
+			scrollImage = Resources.Load("PhotoStacks/Beyond-Photo-Stack") as GameObject;
 			break;
 		}
 
@@ -159,70 +161,70 @@ public class ChangeScreen : MonoBehaviour {
 			title = "ATFS-4000";
 			subtitle = "CENTRIFUGE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			mediaPanel = atfs400Media;
+			//mediaPanel = Resources.Load(MediaPanels\;
 			break;
 		case "GAT":
 			//background = gl4000bg;
 			title = "GAT";
 			subtitle = "SUBTITLE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			mediaPanel = gatMedia;
+			//mediaPanel = gatMedia;
 			break;
 		case "GL2000":
 			//background = gl2000bg;
 			title = "GL-2000";
 			subtitle = "GYROLAB";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			mediaPanel = gl2000Media;
+			//mediaPanel = gl2000Media;
 			break;
 		case "GL4000":
 			//background = gl4000bg;
 			title = "GL-4000";
 			subtitle = "GYROLAB";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			mediaPanel = gl4000Media;
+			mediaPanel = Resources.Load ("MediaPanels/GL4000-Media") as GameObject;
 			break;
 		case "GL6000":
 			//background = gl4000bg;
 			title = "GL-6000";
 			subtitle = "GYROLAB";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			mediaPanel = gl6000Media;
+			mediaPanel = Resources.Load ("MediaPanels/GL6000-Media") as GameObject;
 			break;
 		case "IPT2":
 			//background = gl4000bg;
 			title = "IPT2";
 			subtitle = "INTEGRATED PHYSIOLOGICAL TRAINER";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			mediaPanel = ipt2Media;
+			//mediaPanel = ipt2Media;
 			break;
 		case "IPT3":
 			//background = gl4000bg;
 			title = "IPT3";
 			subtitle = "SUBTITLE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			mediaPanel = ipt3Media;
+			//mediaPanel = ipt3Media;
 			break;
 		case "XForce":
 			//background = gl4000bg;
 			title = "XFORCE";
 			subtitle = "MULTI-ARM CENTRIFUGE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			mediaPanel = xforceMedia;
+			//mediaPanel = xforceMedia;
 			break;
 		case "XSpeed":
 			//background = gl4000bg;
 			title = "XSPEED";
 			subtitle = "SUBTITLE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			mediaPanel = xspeedMedia;
+			//mediaPanel = xspeedMedia;
 			break;
 		case "XVector":
 			//background = gl4000bg;
 			title = "XVECTOR";
 			subtitle = "MONSTER ROLL CAGE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			mediaPanel = xvectorMedia;
+			//mediaPanel = xvectorMedia;
 			break;
 		}
 
