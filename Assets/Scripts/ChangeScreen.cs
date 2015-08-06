@@ -156,70 +156,60 @@ public class ChangeScreen : MonoBehaviour {
 		switch (page)
 		{
 		case "ATFS400":
-			//background = gl4000bg;
 			title = "ATFS-4000";
 			subtitle = "CENTRIFUGE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			//mediaPanel = Resources.Load(MediaPanels\;
+			mediaPanel = Resources.Load("MediaPanels/ATFS400-Media") as GameObject;
 			break;
 		case "GAT":
-			//background = gl4000bg;
 			title = "GAT";
 			subtitle = "SUBTITLE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			//mediaPanel = gatMedia;
+			mediaPanel = Resources.Load("MediaPanels/GAT-Media") as GameObject;
 			break;
 		case "GL2000":
-			//background = gl2000bg;
 			title = "GL-2000";
 			subtitle = "GYROLAB";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
 			//mediaPanel = gl2000Media;
 			break;
 		case "GL4000":
-			//background = gl4000bg;
 			title = "GL-4000";
 			subtitle = "GYROLAB";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
 			mediaPanel = Resources.Load ("MediaPanels/GL4000-Media") as GameObject;
 			break;
 		case "GL6000":
-			//background = gl4000bg;
 			title = "GL-6000";
 			subtitle = "GYROLAB";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
 			mediaPanel = Resources.Load ("MediaPanels/GL6000-Media") as GameObject;
 			break;
 		case "IPT2":
-			//background = gl4000bg;
 			title = "IPT2";
 			subtitle = "INTEGRATED PHYSIOLOGICAL TRAINER";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			//mediaPanel = ipt2Media;
+			mediaPanel = Resources.Load ("MediaPanels/IPT2-Media") as GameObject;
 			break;
 		case "IPT3":
-			//background = gl4000bg;
 			title = "IPT3";
-			subtitle = "SUBTITLE";
+			subtitle = "INTEGRATED PHYSIOLOGICAL TRAINER";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			//mediaPanel = ipt3Media;
+			mediaPanel = Resources.Load ("MediaPanels/IPT3-Media") as GameObject;
 			break;
 		case "XForce":
-			//background = gl4000bg;
 			title = "XFORCE";
 			subtitle = "MULTI-ARM CENTRIFUGE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
 			//mediaPanel = xforceMedia;
 			break;
 		case "XSpeed":
-			//background = gl4000bg;
 			title = "XSPEED";
 			subtitle = "SUBTITLE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
 			//mediaPanel = xspeedMedia;
 			break;
 		case "XVector":
-			//background = gl4000bg;
 			title = "XVECTOR";
 			subtitle = "MONSTER ROLL CAGE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
