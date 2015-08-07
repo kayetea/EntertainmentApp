@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class ChangeScreen : MonoBehaviour {
 
 	private GameObject currentScreen;
 	public GameObject newScreen;
-	private GameObject prevScreen;
 
 	private string currentString;
-	private string prevString;
+	private List<string> prevStrings = new List<string> ();
 
 	private Vector2 offScreen = new Vector2(2140, 0);
 	private Vector2 origin = new Vector2(0,0);
@@ -21,73 +21,84 @@ public class ChangeScreen : MonoBehaviour {
 	private string infoText;
 	private GameObject scrollImage;
 
-
 	//Product Variables
 	private GameObject mediaPanel;
-	
-	/*[Header("Ocean")]
-	public Texture oceanbg;
-	public GameObject oceanScroll;
-	[Header("Land")]
-	public Texture landbg;
-	public GameObject landScroll;
-	[Header("Aviation")]
-	public Texture aviationbg;
-	public GameObject aviationScroll;
-	[Header("Space")]
-	public Texture spacebg;
-	public GameObject spaceScroll;
-	[Header("Beyond")]
-	public Texture beyondbg;
-	public GameObject beyondScroll;
-
-	[Header("Product Media Panels")]
-	public GameObject atfs400Media;	
-	public GameObject gatMedia;
-	public GameObject gl2000Media;
-	public GameObject gl4000Media;
-	public GameObject gl6000Media;
-	public GameObject ipt2Media;
-	public GameObject ipt3Media;
-	public GameObject xforceMedia;
-	public GameObject xspeedMedia;
-	public GameObject xvectorMedia;*/
 
 	void Start () {
 		currentScreen = GameObject.Find("HomePanel");
+		prevStrings.Add ("HomePanel:null");
 	}
 
+
+
 	public void ChangePrevSceneOnClick (){
-		if(prevString != null)
-		{
-			ChangeSceneOnClick(prevString);
+		//get how many 
+		int pageCount = prevStrings.Count;
+
+		//set previous page
+		string prevMyString = prevStrings[pageCount-2];
+
+		//remove last two items (current page and page you're about to visit), don't delete list if on last page
+		if(pageCount > 2){
+			prevStrings.RemoveRange(pageCount-2, 2);
 		}
+		else if(pageCount == 2)
+		{
+			prevStrings.Remove(prevStrings[pageCount-1]);
+		}
+
+		//open previous page
+		ChangeSceneOnClick(prevMyString);
 	}
 	
 	public void ChangeSceneOnClick (string myString){
+		//~~~~~~~~~~WAIT FOR IT TO FADE OUT BEFORE PROCEEDING~~~~~~~~~~
+		//fade between pages
+		GameObject.Find("Fade").GetComponent<Animator>().Play("SceneFadeOut");
+
+		StartCoroutine(DelayMoveAndSet(myString));
+
+		//~~~~~~~~~~ADD STRING TO LIST AND MOVE AND CREATE PAGES~~~~~~~~~~
+		prevStrings.Add(myString);
+
+	}
+
+	IEnumerator DelayMoveAndSet(string myString){
+		yield return new WaitForSeconds(1f);
+		MoveAndSet(myString);
+	}
+
+	private void MoveAndSet(string myString){
+		//split string into two variables
 		string[] stringArray = myString.Split(':');
 		string panelName = stringArray[0];
 		string exactPage = stringArray[1];
-
+		
 		newScreen = GameObject.Find(panelName);
-
+		
 		//move previous screen off screen
 		currentScreen.GetComponent<RectTransform>().anchoredPosition = offScreen;
+		
 		//move new screen to origin and assign as current
 		newScreen.GetComponent<RectTransform>().anchoredPosition = origin;
-		prevScreen = currentScreen;
 		currentScreen = newScreen;
 
-		//MAKE SMARTER AND KNOW WHAT PAGE IT IS COMING FROM
-
-		//remove any scrollstacks & media panels
+		
+		
+		//~~~~~~~~~~CLEAN UP ANY PREVIOUS SCENE LEFTOVER CONTENT~~~~~~~~~~
+		
+		//remove any scrollstacks using a function in the LoopImageStack script
 		transform.Find("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().RemoveStacks();
 		transform.Find("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().enabled = false;
+		
+		//if any Media panels, remove them!
 		foreach (Transform child in transform.Find("ProductPanel/Media"))
 		{
 			GameObject.Destroy(child.gameObject);
 		}
-
+		
+		//~~~~~~~~~~CUSTOMIZE SCREEN TO SPECIFIC PAGE~~~~~~~~~~
+		
 		//customize new screen
 		if(panelName == "EnvironmentPanel")
 		{
@@ -100,8 +111,6 @@ public class ChangeScreen : MonoBehaviour {
 	}
 
 	private void SetEnvironmentScreen(string page){
-		Debug.Log (page);
-
 		switch (page)
 		{
 		case "Ocean":
@@ -171,7 +180,7 @@ public class ChangeScreen : MonoBehaviour {
 			title = "GL-2000";
 			subtitle = "GYROLAB";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			//mediaPanel = gl2000Media;
+			mediaPanel = Resources.Load ("MediaPanels/GL2000-Media") as GameObject;
 			break;
 		case "GL4000":
 			title = "GL-4000";
@@ -201,30 +210,29 @@ public class ChangeScreen : MonoBehaviour {
 			title = "XFORCE";
 			subtitle = "MULTI-ARM CENTRIFUGE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			//mediaPanel = xforceMedia;
+			mediaPanel = Resources.Load ("MediaPanels/XForce-Media") as GameObject;
 			break;
 		case "XSpeed":
 			title = "XSPEED";
 			subtitle = "SUBTITLE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			//mediaPanel = xspeedMedia;
+			mediaPanel = Resources.Load ("MediaPanels/XSpeed-Media") as GameObject;
 			break;
 		case "XVector":
 			title = "XVECTOR";
 			subtitle = "MONSTER ROLL CAGE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
-			//mediaPanel = xvectorMedia;
+			mediaPanel = Resources.Load ("MediaPanels/XVector-Media") as GameObject;
 			break;
 		}
 
-		//set background
 		//set title panel (title, subtitle, text block)
 		transform.Find("ProductPanel/Title Panel/Title").GetComponent<Text>().text = title;
 		transform.Find("ProductPanel/Title Panel/Subtitle").GetComponent<Text>().text = subtitle;
 		transform.Find("ProductPanel/Title Panel/Text").GetComponent<Text>().text = infoText;
+
 		//photo panels
 		GameObject myMediaPanel = Instantiate(mediaPanel);
 		myMediaPanel.transform.SetParent(transform.Find("ProductPanel/Media"), false);
-		//3d object
 	}
 }

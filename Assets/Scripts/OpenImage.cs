@@ -22,7 +22,7 @@ public class OpenImage: MonoBehaviour{
 	private int currentImage = 0;
 	public RawImage rawImage; 
 
-	private GameObject prevBtn;
+	private GameObject homePrevBtn;
 
 
 	void Start() {
@@ -56,14 +56,14 @@ public class OpenImage: MonoBehaviour{
 		rawImage.texture = imageArray[currentImage];	
 
 		//disable previous button
-		prevBtn = GameObject.Find("HomePrev/PreviousBtn");
-		prevBtn.SetActive(false);
+		homePrevBtn = GameObject.Find("HomePrev");
+		homePrevBtn.SetActive(false);
 	}
 
 	//Close Panel
 	public void ClosePanel(){
 		panel.SetActive (false);
-		prevBtn.SetActive(true);
+		homePrevBtn.SetActive(true);
 	}
 	
 
