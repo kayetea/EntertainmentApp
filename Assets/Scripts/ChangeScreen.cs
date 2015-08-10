@@ -20,6 +20,7 @@ public class ChangeScreen : MonoBehaviour {
 	private string subtitle;
 	private string infoText;
 	private GameObject scrollImage;
+	private GameObject photoPanel;
 
 	//Product Variables
 	private GameObject mediaPanel;
@@ -133,6 +134,7 @@ public class ChangeScreen : MonoBehaviour {
 			subtitle = "JET - AIRCRAFT - HELICOPTER";
 			infoText = "From prop planes to jet fighters, and everything in between, we know the air above calls your name. We bring your aircraft (and adventures!) to life. With aerodynamics models, stunning visuals, surround sound, and full immersive motion (or non-motion) platform, we’ll get you back in the sky real soon…  ";
 			scrollImage = Resources.Load("PhotoStacks/Aviation-Photo-Stack") as GameObject;
+			photoPanel = Resources.Load ("PhotoStacks/Aviation-Full-Screen") as GameObject;
 			break;
 		case "Space":
 			background = Resources.Load("BgImages/space-background") as Texture2D;
@@ -159,6 +161,8 @@ public class ChangeScreen : MonoBehaviour {
 		//enable & assign scroll panel + prefab height
 		transform.Find("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().enabled = true;
 		transform.Find("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().scrollImagePrefab = scrollImage;
+		//enable & assign scroll panel photo zooms
+		 //transform.Find ("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().photoPanelPrefab = photoPanel;
 	}
 
 	private void SetProductScreen(string page){

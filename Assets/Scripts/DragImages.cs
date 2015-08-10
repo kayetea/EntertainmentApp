@@ -35,8 +35,11 @@ public class DragImages : MonoBehaviour
 		// If there is an active finger, move this GameObject based on it
 		if (draggingFinger != null)
 		{
-			deltaPos = new Vector2(0, draggingFinger.DeltaScreenPosition.y);
-			Lean.LeanTouch.MoveObject(transform , deltaPos);
+			//if finger is touching game object
+			if(this.GetComponentInParent<LoopImageStack>().touchingStack){
+				deltaPos = new Vector2(0, draggingFinger.DeltaScreenPosition.y);
+				Lean.LeanTouch.MoveObject(transform , deltaPos);
+			}
 		}
 	}
 

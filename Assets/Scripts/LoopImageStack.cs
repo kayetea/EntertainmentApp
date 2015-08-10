@@ -24,8 +24,12 @@ public class LoopImageStack : MonoBehaviour {
 	public GameObject scrollImagePrefab;
 	public GameObject prefab1;
 	private GameObject prefab2;
+	public GameObject photoPanelPrefab;
+	private GameObject photoPanelP;
 
 	private float prefabHeight;
+
+	public bool touchingStack;
 
 	public void Start () {
 		prefabHeight = scrollImagePrefab.GetComponent<RectTransform>().rect.height;
@@ -40,6 +44,10 @@ public class LoopImageStack : MonoBehaviour {
 		Vector2 pos = prefab2.GetComponent<RectTransform>().anchoredPosition;
 		pos.y -= prefabHeight;
 		prefab2.GetComponent<RectTransform>().anchoredPosition = pos;
+
+		//attaches full screen panel
+		//photoPanelP = Instantiate (photoPanelPrefab) as GameObject;
+		//photoPanelP.transform.SetParent (this.transform, false);
 
 	}
 
@@ -74,14 +82,14 @@ public class LoopImageStack : MonoBehaviour {
 
 	}
 
+	public void MyCollision(bool touch){
+		touchingStack = touch;
+	}
+
 	private void Move(GameObject prefab){
 		//move object upwards over time * speed
 		Vector2 pos = prefab.GetComponent<RectTransform>().anchoredPosition;
 		pos.y += 1 * speed * Time.deltaTime;
-
-		//make sure DragImages.cs doesn't move the stack in the x direction
-		//pos.x = 0;
-
 		prefab.GetComponent<RectTransform>().anchoredPosition = pos;
 	}
 
