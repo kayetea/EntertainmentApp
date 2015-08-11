@@ -21,6 +21,7 @@ public class ChangeScreen : MonoBehaviour {
 	private string infoText;
 	private GameObject scrollImage;
 	private GameObject photoPanel;
+	public GameObject gForce;
 
 	//Product Variables
 	private GameObject mediaPanel;
@@ -91,6 +92,7 @@ public class ChangeScreen : MonoBehaviour {
 		//remove any scrollstacks using a function in the LoopImageStack script
 		transform.Find("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().RemoveStacks();
 		transform.Find("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().enabled = false;
+		gForce.SetActive(true);
 		
 		//if any Media panels, remove them!
 		foreach (Transform child in transform.Find("ProductPanel/Media"))
@@ -120,6 +122,8 @@ public class ChangeScreen : MonoBehaviour {
 			subtitle = "SUBMARINE - BOATS";
 			infoText = "Sail, submerge, or splash across the vast blue ocean. From the deepest depths to the shimmering surface, let us bring your adventure to motion by combining stunning visuals and sounds, with one of our popular immersive motion or non-motion devices below.  ";
 			scrollImage = Resources.Load("PhotoStacks/Ocean-Photo-Stack") as GameObject;
+			//hide g-force
+			gForce.SetActive(false);
 			break;
 		case "Land":
 			background = Resources.Load("BgImages/land-background") as Texture2D;
@@ -227,6 +231,12 @@ public class ChangeScreen : MonoBehaviour {
 			subtitle = "MONSTER ROLL CAGE";
 			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
 			mediaPanel = Resources.Load ("MediaPanels/XVector-Media") as GameObject;
+			break;
+		case "NonMotion":
+			title = "NON-MOTION";
+			subtitle = "PRODUCTS";
+			infoText = " ";
+			mediaPanel = Resources.Load ("MediaPanels/NonMotion-Media") as GameObject;
 			break;
 		}
 
