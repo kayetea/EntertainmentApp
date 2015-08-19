@@ -175,61 +175,61 @@ public class ChangeScreen : MonoBehaviour {
 		case "ATFS400":
 			title = "ATFS-4000";
 			subtitle = "CENTRIFUGE";
-			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
+			infoText = " ";
 			mediaPanel = Resources.Load("MediaPanels/ATFS400-Media") as GameObject;
 			break;
 		case "GAT":
 			title = "GAT";
-			subtitle = "SUBTITLE";
-			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
+			subtitle = "GENERAL AVIATON TRAINER";
+			infoText = " ";
 			mediaPanel = Resources.Load("MediaPanels/GAT-Media") as GameObject;
 			break;
 		case "GL2000":
 			title = "GL-2000";
 			subtitle = "GYROLAB";
-			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
+			infoText = " ";
 			mediaPanel = Resources.Load ("MediaPanels/GL2000-Media") as GameObject;
 			break;
 		case "GL4000":
 			title = "GL-4000";
 			subtitle = "GYROLAB";
-			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
+			infoText = " ";
 			mediaPanel = Resources.Load ("MediaPanels/GL4000-Media") as GameObject;
 			break;
 		case "GL6000":
 			title = "GL-6000";
 			subtitle = "GYROLAB";
-			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
+			infoText = " ";
 			mediaPanel = Resources.Load ("MediaPanels/GL6000-Media") as GameObject;
 			break;
 		case "IPT2":
 			title = "IPT2";
-			subtitle = "INTEGRATED PHYSIOLOGICAL TRAINER";
-			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
+			subtitle = "INTEGRATED PHYSIO TRAINER";
+			infoText = " ";
 			mediaPanel = Resources.Load ("MediaPanels/IPT2-Media") as GameObject;
 			break;
 		case "IPT3":
 			title = "IPT3";
-			subtitle = "INTEGRATED PHYSIOLOGICAL TRAINER";
-			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
+			subtitle = "INTEGRATED PHYSIO TRAINER";
+			infoText = " ";
 			mediaPanel = Resources.Load ("MediaPanels/IPT3-Media") as GameObject;
 			break;
 		case "XForce":
 			title = "XFORCE";
 			subtitle = "MULTI-ARM CENTRIFUGE";
-			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
+			infoText = " ";
 			mediaPanel = Resources.Load ("MediaPanels/XForce-Media") as GameObject;
 			break;
 		case "XSpeed":
 			title = "XSPEED";
-			subtitle = "SUBTITLE";
-			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
+			subtitle = "MOTION PLATFORM";
+			infoText = " ";
 			mediaPanel = Resources.Load ("MediaPanels/XSpeed-Media") as GameObject;
 			break;
 		case "XVector":
 			title = "XVECTOR";
 			subtitle = "MONSTER ROLL CAGE";
-			infoText = "Please provide brief but meaningful text about the product and some of its features. Perhaps even mentioning successful other installations and contracts involving this product.";
+			infoText = " ";
 			mediaPanel = Resources.Load ("MediaPanels/XVector-Media") as GameObject;
 			break;
 		case "NonMotion":
