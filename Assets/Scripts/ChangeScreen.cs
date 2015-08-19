@@ -93,6 +93,7 @@ public class ChangeScreen : MonoBehaviour {
 		transform.Find("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().RemoveStacks();
 		transform.Find("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().enabled = false;
 		gForce.SetActive(true);
+		Resources.UnloadUnusedAssets ();
 		
 		//if any Media panels, remove them!
 		foreach (Transform child in transform.Find("ProductPanel/Media"))
