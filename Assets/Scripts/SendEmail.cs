@@ -8,6 +8,7 @@ public class SendEmail : MonoBehaviour
 {
 	public GameObject emailAddress;
 	public GameObject buttonCollection;
+	public GameObject clientName;
 	private string bodyText;
 	private List<string> productList = new List<string> ();
 
@@ -34,10 +35,10 @@ public class SendEmail : MonoBehaviour
 	}
 
 	private void BuildBody(){
-		bodyText = "Thank you for your time and interest today in ETC Commercial Simulation Products. " +
-			"As we discussed, here is more information on the products and unique environment experiences we offer. " +
-			"Below is my contact information should you have further questions or would like to request a formal quote or proposal." +
-			"\n \nHere is literature on the specific products and experiences we discussed. Please follow the links below to access the media.";
+		bodyText = "Dear " + clientName.GetComponent<Text>().text + ", \n \nThank you for your time and interest today in ETC Commercial Simulation Products. " +
+			"As we discussed, listed below is more information on the products and unique environment experiences we offer. " +
+			"Also below is my contact information should you have further questions or would like to request a formal quote or proposal." +
+			"\nHere is literature on the specific products and experiences we discussed. Please follow the links below to access the media.";
 
 		foreach(Transform child in transform)
 		{
@@ -53,7 +54,7 @@ public class SendEmail : MonoBehaviour
 		//turn array into body text
 		foreach(string product in productList)
 		{
-			bodyText = bodyText + "\n \n" + product; 
+			bodyText = bodyText + "\n" + product; 
 		}
 
 
