@@ -114,10 +114,15 @@ public class ChangeScreen : MonoBehaviour {
 		}
 		if(panelName =="MailPanel")
 		{
-			Debug.Log("IT'S MAIL TIME");
 			background = Resources.Load("BgImages/neutral-background") as Texture2D;
 			//set background
 			transform.Find("BackgroundCamera/BackgroundImage").GetComponent<SpriteRenderer>().sprite = Sprite.Create (background, new Rect(0, 0, 2048, 1536), new Vector2(0.5f,0.5f));
+		}
+		if(panelName =="HomePanel")
+		{
+			//play titles in animation
+			transform.Find ("HomePanel/CHOOSE YOUR").GetComponent<Animator>().Play ("TitleEnterLeft");
+			transform.Find ("HomePanel/EXPERIENCE").GetComponent<Animator>().Play ("TitleEnterRight");
 		}
 	}
 
