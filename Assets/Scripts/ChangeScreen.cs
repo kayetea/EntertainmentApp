@@ -186,7 +186,7 @@ public class ChangeScreen : MonoBehaviour {
 		switch (page)
 		{
 		case "ATFS400":
-			title = "ATFS-4000";
+			title = "ATFS-400";
 			subtitle = "CENTRIFUGE";
 			infoText = " ";
 			mediaPanel = Resources.Load("MediaPanels/ATFS400-Media") as GameObject;
