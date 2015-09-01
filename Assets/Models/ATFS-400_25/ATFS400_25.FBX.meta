@@ -3,10 +3,30 @@ guid: 65f66455ad1eb814783f1cf7200c2b90
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
+    100000: //RootNode
+    100002: PITCH
+    100004: PLANETARY
+    100006: ROLL
+    100008: STATIONARY
+    400000: //RootNode
+    400002: PITCH
+    400004: PLANETARY
+    400006: ROLL
+    400008: STATIONARY
+    2300000: PITCH
+    2300002: PLANETARY
+    2300004: ROLL
+    2300006: STATIONARY
+    3300000: PITCH
+    3300002: PLANETARY
+    3300004: ROLL
+    3300006: STATIONARY
     4300000: STATIONARY
     4300002: PLANETARY
     4300004: roll
     4300006: PITCH
+    4300008: ROLL
+    11100000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
@@ -46,7 +66,7 @@ ModelImporter:
     splitTangentsAcrossUV: 1
     normalImportMode: 0
     tangentImportMode: 1
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     human: []

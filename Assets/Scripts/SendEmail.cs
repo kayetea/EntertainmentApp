@@ -19,7 +19,7 @@ public class SendEmail : MonoBehaviour
 		//email Id to send the mail to
 		string email = emailAddress.GetComponent<Text>().text;
 		//subject of the mail
-		string subject = MyEscapeURL("ETC Entertainment Products");
+		string subject = MyEscapeURL("ETC's Commercial Simulation Products");
 		//body of the mail which consists of Device Model and its Operating System
 		BuildBody();
 		string body = MyEscapeURL(bodyText);
