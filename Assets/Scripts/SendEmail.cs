@@ -35,10 +35,10 @@ public class SendEmail : MonoBehaviour
 	}
 
 	private void BuildBody(){
-		bodyText = "Dear " + clientName.GetComponent<Text>().text + ", \n \nThank you for your time and interest today in ETC Commercial Simulation Products. " +
+		bodyText = "Dear " + clientName.GetComponent<Text>().text + ", \n \nThank you for your time and interest today in ETC's Commercial Simulation Products. " +
 			"As we discussed, listed below is more information on the products and unique environment experiences we offer. " +
 			"Also below is my contact information should you have further questions or would like to request a formal quote or proposal." +
-			"\nHere is literature on the specific products and experiences we discussed. Please follow the links below to access the media.";
+			"\n\nFor general information on the products and services we provide, please check out our overview trifold here - http://www.etcusa.com/thrills/Simulated-Experiences.pdf";
 
 		foreach(Transform child in transform)
 		{
@@ -51,10 +51,57 @@ public class SendEmail : MonoBehaviour
 				}
 			}
 		}
+
+		//check if any products were selected
+		if(productList.Count > 0 )
+		{
+			bodyText = bodyText + "\n\nHere is more information on your selected products -- please follow the links below to access the media.";
+		}
+
+
 		//turn array into body text
 		foreach(string product in productList)
 		{
-			bodyText = bodyText + "\n" + product; 
+			string productText = " ";
+			switch (product)
+			{
+			case "ATFS400":
+				productText = "ATFS-400 Centrifuge - http://www.etcusa.com/thrills/ATFS-400.pdf";
+				break;
+			case "GAT":
+				productText = "GAT (General Aviation Trainer) - http://www.etcusa.com/thrills/GAT.pdf";
+				break;
+			case "GL2000":
+				productText = "GL-2000 Gyrolab - http://www.etcusa.com/thrills/GL2000.pdf";
+				break;
+			case "GL4000":
+				productText = "GL-4000 Gyrolab - http://www.etcusa.com/thrills/GL4000.pdf";
+				break;
+			case "GL6000":
+				productText = "GL-2000 Gyrolab - http://www.etcusa.com/thrills/GL6000.pdf";
+				break;
+			case "IPT2":
+				productText = "IPT2 (Integrated Physiological Trainer) - http://www.etcusa.com/thrills/IPTII.pdf";
+				break;
+			case "IPT3":
+				productText = "For more information on our IPT3, please stay in touch.";
+				break;
+			case "XForce":
+				productText = "XForce Multi-arm Centrifuge - http://www.etcusa.com/thrills/XForce.pdf";
+				break;
+			case "XSpeed":
+				productText = "XSpeed Motion Base - http://www.etcusa.com/thrills/XSpeed.pdf";
+				break;
+			case "XVector":
+				productText = "XVector Motion Base - http://www.etcusa.com/thrills/XVector.pdf";
+				break;
+			case "NonMotion":
+				productText = "For more information on our NonMotion products, please stay in touch.";
+				break;
+			}
+
+
+			bodyText = bodyText + "\n" + productText; 
 		}
 
 
