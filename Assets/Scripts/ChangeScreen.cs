@@ -132,8 +132,8 @@ public class ChangeScreen : MonoBehaviour {
 		case "Ocean":
 			background = Resources.Load("BgImages/ocean-background") as Texture2D;
 			title = "OCEAN";
-			subtitle = "SUBMARINE - BOATS";
-			infoText = "Sail, submerge, or splash across the vast blue ocean. From the deepest depths to the shimmering surface, let us bring your adventure to motion by combining stunning visuals and sounds, with one of our popular immersive motion or non-motion devices below.  ";
+			subtitle = "SUBMARINES - BOATS";
+			infoText = "Sail, submerge, or splash across the vast blue ocean. From the deepest depths to the shimmering surface, let us bring your ocean adventure to motion by combining stunning visuals and sounds with one of our popular immersive devices below.";
 			scrollImage = Resources.Load("PhotoStacks/Ocean-Photo-Stack") as GameObject;
 			//hide g-force
 			gForce.SetActive(false);
@@ -142,14 +142,14 @@ public class ChangeScreen : MonoBehaviour {
 			background = Resources.Load("BgImages/land-background") as Texture2D;
 			title = "LAND";
 			subtitle = "RACE CARS - MOTORCYCLES - TRUCKS";
-			infoText = "Race or rocket past a stadium of your fans, the countryside, or exotic terrain. Able to model your 4x4 to elite jet racing cars, let us bring your adventure to motion! With stunning visuals and sound, please choose an immersive experience platform or device below.";
+			infoText = "Race or rocket past a stadium of your fans, the countryside or an exotic terrain. Let us bring your racing adventure to the finish line with stunning visuals and sound.";
 			scrollImage = Resources.Load("PhotoStacks/Land-Photo-Stack") as GameObject;
 			break;
 		case "Aviation":
 			background = Resources.Load("BgImages/aviation-background") as Texture2D;
 			title = "AVIATION";
-			subtitle = "JET - AIRCRAFT - HELICOPTER";
-			infoText = "From prop planes to jet fighters, and everything in between, we know the air above calls your name. We bring your aircraft (and adventures!) to life. With aerodynamics models, stunning visuals, surround sound, and full immersive motion (or non-motion) platform, we’ll get you back in the sky real soon…  ";
+			subtitle = "JETS - AIRCRAFTS - HELICOPTERS";
+			infoText = "From prop planes to jet fighters, and everything in between, we know the air above calls your name. Let us bring your aircraft adventures to life with our aerodynamics models, stunning visuals, surround sound, and immersive platforms.";
 			scrollImage = Resources.Load("PhotoStacks/Aviation-Photo-Stack") as GameObject;
 			photoPanel = Resources.Load ("PhotoStacks/Aviation-Full-Screen") as GameObject;
 			break;
@@ -157,14 +157,14 @@ public class ChangeScreen : MonoBehaviour {
 			background = Resources.Load("BgImages/space-background") as Texture2D;
 			title = "SPACE";
 			subtitle = "SUBORBITAL - ORBITAL";
-			infoText = "The final frontier…experience the breathtaking sensation of rocketing towards the stars and then silent serenity as you gaze upon the curvature of the earth. From spacecraft to space stations, let us bring your unique space adventure to motion by combining stunning visuals and sounds, with one of our popular immersive motion or non-motion devices below.  ";
+			infoText = "From spacecraft to space stations, let us bring your unique space adventure to motion by combining stunning visuals and sounds with one of our popular immersive devices below.";
 			scrollImage = Resources.Load("PhotoStacks/Space-Photo-Stack") as GameObject;
 			break;
 		case "Beyond":
 			background = Resources.Load("BgImages/beyond-background") as Texture2D;
 			title = "BEYOND";
 			subtitle = "MARS - ASTEROIDS - DEEP SPACE";
-			infoText = "Mars, Asteroids, and now Pluto. They are beckoning our arrival. From Martian rovers to starships of the future, let us bring your galactic adventure to motion by combining stunning visuals and sounds, with one of our popular immersive motion or non-motion devices below.";
+			infoText = "From Martian rovers to starships of the future, let us bring your galactic adventure to motion by combining stunning visuals and sounds with one of our popular immersive devices below.";
 			scrollImage = Resources.Load("PhotoStacks/Beyond-Photo-Stack") as GameObject;
 			break;
 		}
