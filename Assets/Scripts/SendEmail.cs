@@ -78,7 +78,7 @@ public class SendEmail : MonoBehaviour
 				productText = "GL-4000 Gyrolab - http://www.etcusa.com/thrills/GL4000.pdf";
 				break;
 			case "GL6000":
-				productText = "GL-2000 Gyrolab - http://www.etcusa.com/thrills/GL6000.pdf";
+				productText = "GL-6000 Gyrolab - http://www.etcusa.com/thrills/GL6000.pdf";
 				break;
 			case "IPT2":
 				productText = "IPT2 (Integrated Physiological Trainer) - http://www.etcusa.com/thrills/IPTII.pdf";
