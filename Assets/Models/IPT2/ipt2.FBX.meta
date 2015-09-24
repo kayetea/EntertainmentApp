@@ -1,0 +1,1241 @@
+fileFormatVersion: 2
+guid: f131d2e2f069eee4cb0c5be151c95579
+timeCreated: 1442587101
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: 3armPlate
+    100002: base
+    100004: basebase
+    100006: baseConnectingPlate
+    100008: Bone001
+    100010: Bone002
+    100012: btmCirclePlateLg
+    100014: btmCirclePlateSm
+    100016: circlePlate
+    100018: Cylinder001
+    100020: Cylinder002
+    100022: Cylinder003
+    100024: Dummy001
+    100026: Dummy002
+    100028: Dummy003
+    100030: horizCylHinge001
+    100032: horizCylHinge002
+    100034: horizCylHinge003
+    100036: horizontalCylinders001
+    100038: horizontalCylinders002
+    100040: horizontalCylinders003
+    100042: INVENTOR-MODEL
+    100044: //RootNode
+    100046: ipt2_shell
+    100048: Layer:0
+    100050: Layer:0 1
+    100052: Layer:0 10
+    100054: Layer:0 100
+    100056: Layer:0 101
+    100058: Layer:0 102
+    100060: Layer:0 103
+    100062: Layer:0 104
+    100064: Layer:0 104_MeshPart0
+    100066: Layer:0 104_MeshPart1
+    100068: Layer:0 104_MeshPart2
+    100070: Layer:0 104_MeshPart3
+    100072: Layer:0 104_MeshPart4
+    100074: Layer:0 104_MeshPart5
+    100076: Layer:0 104_MeshPart6
+    100078: Layer:0 105
+    100080: Layer:0 106
+    100082: Layer:0 107
+    100084: Layer:0 11
+    100086: Layer:0 12
+    100088: Layer:0 13
+    100090: Layer:0 14
+    100092: Layer:0 15
+    100094: Layer:0 16
+    100096: Layer:0 17
+    100098: Layer:0 18
+    100100: Layer:0 19
+    100102: Layer:0 2
+    100104: Layer:0 20
+    100106: Layer:0 21
+    100108: Layer:0 22
+    100110: Layer:0 23
+    100112: Layer:0 24
+    100114: Layer:0 25
+    100116: Layer:0 26
+    100118: Layer:0 27
+    100120: Layer:0 28
+    100122: Layer:0 29
+    100124: Layer:0 3
+    100126: Layer:0 30
+    100128: Layer:0 31
+    100130: Layer:0 32
+    100132: Layer:0 33
+    100134: Layer:0 34
+    100136: Layer:0 35
+    100138: Layer:0 36
+    100140: Layer:0 37
+    100142: Layer:0 38
+    100144: Layer:0 39
+    100146: Layer:0 4
+    100148: Layer:0 40
+    100150: Layer:0 41
+    100152: Layer:0 42
+    100154: Layer:0 43
+    100156: Layer:0 44
+    100158: Layer:0 45
+    100160: Layer:0 46
+    100162: Layer:0 47
+    100164: Layer:0 48
+    100166: Layer:0 49
+    100168: Layer:0 5
+    100170: Layer:0 50
+    100172: Layer:0 51
+    100174: Layer:0 52
+    100176: Layer:0 53
+    100178: Layer:0 54
+    100180: Layer:0 54_MeshPart0
+    100182: Layer:0 54_MeshPart1
+    100184: Layer:0 55
+    100186: Layer:0 55_MeshPart0
+    100188: Layer:0 55_MeshPart1
+    100190: Layer:0 55_MeshPart2
+    100192: Layer:0 55_MeshPart3
+    100194: Layer:0 55_MeshPart4
+    100196: Layer:0 55_MeshPart5
+    100198: Layer:0 55_MeshPart6
+    100200: Layer:0 55_MeshPart7
+    100202: Layer:0 55_MeshPart8
+    100204: Layer:0 55_MeshPart9
+    100206: Layer:0 56
+    100208: Layer:0 57
+    100210: Layer:0 58
+    100212: Layer:0 59
+    100214: Layer:0 6
+    100216: Layer:0 60
+    100218: Layer:0 61
+    100220: Layer:0 62
+    100222: Layer:0 63
+    100224: Layer:0 64
+    100226: Layer:0 65
+    100228: Layer:0 66
+    100230: Layer:0 67
+    100232: Layer:0 68
+    100234: Layer:0 69
+    100236: Layer:0 7
+    100238: Layer:0 70
+    100240: Layer:0 71
+    100242: Layer:0 72
+    100244: Layer:0 73
+    100246: Layer:0 74
+    100248: Layer:0 75
+    100250: Layer:0 76
+    100252: Layer:0 77
+    100254: Layer:0 78
+    100256: Layer:0 79
+    100258: Layer:0 8
+    100260: Layer:0 80
+    100262: Layer:0 81
+    100264: Layer:0 82
+    100266: Layer:0 83
+    100268: Layer:0 84
+    100270: Layer:0 85
+    100272: Layer:0 86
+    100274: Layer:0 87
+    100276: Layer:0 88
+    100278: Layer:0 89
+    100280: Layer:0 9
+    100282: Layer:0 90
+    100284: Layer:0 91
+    100286: Layer:0 92
+    100288: Layer:0 93
+    100290: Layer:0 94
+    100292: Layer:0 95
+    100294: Layer:0 96
+    100296: Layer:0 97
+    100298: Layer:0 98
+    100300: Layer:0 99
+    100302: Layer:0 99_MeshPart0
+    100304: Layer:0 99_MeshPart1
+    100306: Line001
+    100308: shellPOS_dummy
+    100310: Spring001
+    100312: springBtmPlate
+    100314: springTopPlate
+    100316: thickCyl001
+    100318: thickCyl002
+    100320: thickCyl003
+    100322: thickCyl004
+    100324: thickCyl005
+    100326: thickCyl007
+    100328: thinCyl001
+    100330: thinCyl002
+    100332: thinCyl003
+    100334: thinCyl004
+    100336: thinCyl005
+    100338: thinCyl007
+    400000: 3armPlate
+    400002: base
+    400004: basebase
+    400006: baseConnectingPlate
+    400008: Bone001
+    400010: Bone002
+    400012: btmCirclePlateLg
+    400014: btmCirclePlateSm
+    400016: circlePlate
+    400018: Cylinder001
+    400020: Cylinder002
+    400022: Cylinder003
+    400024: Dummy001
+    400026: Dummy002
+    400028: Dummy003
+    400030: horizCylHinge001
+    400032: horizCylHinge002
+    400034: horizCylHinge003
+    400036: horizontalCylinders001
+    400038: horizontalCylinders002
+    400040: horizontalCylinders003
+    400042: INVENTOR-MODEL
+    400044: //RootNode
+    400046: ipt2_shell
+    400048: Layer:0
+    400050: Layer:0 1
+    400052: Layer:0 10
+    400054: Layer:0 100
+    400056: Layer:0 101
+    400058: Layer:0 102
+    400060: Layer:0 103
+    400062: Layer:0 104
+    400064: Layer:0 104_MeshPart0
+    400066: Layer:0 104_MeshPart1
+    400068: Layer:0 104_MeshPart2
+    400070: Layer:0 104_MeshPart3
+    400072: Layer:0 104_MeshPart4
+    400074: Layer:0 104_MeshPart5
+    400076: Layer:0 104_MeshPart6
+    400078: Layer:0 105
+    400080: Layer:0 106
+    400082: Layer:0 107
+    400084: Layer:0 11
+    400086: Layer:0 12
+    400088: Layer:0 13
+    400090: Layer:0 14
+    400092: Layer:0 15
+    400094: Layer:0 16
+    400096: Layer:0 17
+    400098: Layer:0 18
+    400100: Layer:0 19
+    400102: Layer:0 2
+    400104: Layer:0 20
+    400106: Layer:0 21
+    400108: Layer:0 22
+    400110: Layer:0 23
+    400112: Layer:0 24
+    400114: Layer:0 25
+    400116: Layer:0 26
+    400118: Layer:0 27
+    400120: Layer:0 28
+    400122: Layer:0 29
+    400124: Layer:0 3
+    400126: Layer:0 30
+    400128: Layer:0 31
+    400130: Layer:0 32
+    400132: Layer:0 33
+    400134: Layer:0 34
+    400136: Layer:0 35
+    400138: Layer:0 36
+    400140: Layer:0 37
+    400142: Layer:0 38
+    400144: Layer:0 39
+    400146: Layer:0 4
+    400148: Layer:0 40
+    400150: Layer:0 41
+    400152: Layer:0 42
+    400154: Layer:0 43
+    400156: Layer:0 44
+    400158: Layer:0 45
+    400160: Layer:0 46
+    400162: Layer:0 47
+    400164: Layer:0 48
+    400166: Layer:0 49
+    400168: Layer:0 5
+    400170: Layer:0 50
+    400172: Layer:0 51
+    400174: Layer:0 52
+    400176: Layer:0 53
+    400178: Layer:0 54
+    400180: Layer:0 54_MeshPart0
+    400182: Layer:0 54_MeshPart1
+    400184: Layer:0 55
+    400186: Layer:0 55_MeshPart0
+    400188: Layer:0 55_MeshPart1
+    400190: Layer:0 55_MeshPart2
+    400192: Layer:0 55_MeshPart3
+    400194: Layer:0 55_MeshPart4
+    400196: Layer:0 55_MeshPart5
+    400198: Layer:0 55_MeshPart6
+    400200: Layer:0 55_MeshPart7
+    400202: Layer:0 55_MeshPart8
+    400204: Layer:0 55_MeshPart9
+    400206: Layer:0 56
+    400208: Layer:0 57
+    400210: Layer:0 58
+    400212: Layer:0 59
+    400214: Layer:0 6
+    400216: Layer:0 60
+    400218: Layer:0 61
+    400220: Layer:0 62
+    400222: Layer:0 63
+    400224: Layer:0 64
+    400226: Layer:0 65
+    400228: Layer:0 66
+    400230: Layer:0 67
+    400232: Layer:0 68
+    400234: Layer:0 69
+    400236: Layer:0 7
+    400238: Layer:0 70
+    400240: Layer:0 71
+    400242: Layer:0 72
+    400244: Layer:0 73
+    400246: Layer:0 74
+    400248: Layer:0 75
+    400250: Layer:0 76
+    400252: Layer:0 77
+    400254: Layer:0 78
+    400256: Layer:0 79
+    400258: Layer:0 8
+    400260: Layer:0 80
+    400262: Layer:0 81
+    400264: Layer:0 82
+    400266: Layer:0 83
+    400268: Layer:0 84
+    400270: Layer:0 85
+    400272: Layer:0 86
+    400274: Layer:0 87
+    400276: Layer:0 88
+    400278: Layer:0 89
+    400280: Layer:0 9
+    400282: Layer:0 90
+    400284: Layer:0 91
+    400286: Layer:0 92
+    400288: Layer:0 93
+    400290: Layer:0 94
+    400292: Layer:0 95
+    400294: Layer:0 96
+    400296: Layer:0 97
+    400298: Layer:0 98
+    400300: Layer:0 99
+    400302: Layer:0 99_MeshPart0
+    400304: Layer:0 99_MeshPart1
+    400306: Line001
+    400308: shellPOS_dummy
+    400310: Spring001
+    400312: springBtmPlate
+    400314: springTopPlate
+    400316: thickCyl001
+    400318: thickCyl002
+    400320: thickCyl003
+    400322: thickCyl004
+    400324: thickCyl005
+    400326: thickCyl007
+    400328: thinCyl001
+    400330: thinCyl002
+    400332: thinCyl003
+    400334: thinCyl004
+    400336: thinCyl005
+    400338: thinCyl007
+    2300000: 3armPlate
+    2300002: base
+    2300004: basebase
+    2300006: baseConnectingPlate
+    2300008: btmCirclePlateLg
+    2300010: btmCirclePlateSm
+    2300012: circlePlate
+    2300014: Cylinder001
+    2300016: Cylinder002
+    2300018: Cylinder003
+    2300020: horizCylHinge001
+    2300022: horizCylHinge002
+    2300024: horizCylHinge003
+    2300026: horizontalCylinders001
+    2300028: horizontalCylinders002
+    2300030: horizontalCylinders003
+    2300032: ipt2_shell
+    2300034: Layer:0
+    2300036: Layer:0 1
+    2300038: Layer:0 10
+    2300040: Layer:0 100
+    2300042: Layer:0 101
+    2300044: Layer:0 102
+    2300046: Layer:0 103
+    2300048: Layer:0 104_MeshPart0
+    2300050: Layer:0 104_MeshPart1
+    2300052: Layer:0 104_MeshPart2
+    2300054: Layer:0 104_MeshPart3
+    2300056: Layer:0 104_MeshPart4
+    2300058: Layer:0 104_MeshPart5
+    2300060: Layer:0 104_MeshPart6
+    2300062: Layer:0 105
+    2300064: Layer:0 106
+    2300066: Layer:0 107
+    2300068: Layer:0 11
+    2300070: Layer:0 12
+    2300072: Layer:0 13
+    2300074: Layer:0 14
+    2300076: Layer:0 15
+    2300078: Layer:0 16
+    2300080: Layer:0 17
+    2300082: Layer:0 18
+    2300084: Layer:0 19
+    2300086: Layer:0 2
+    2300088: Layer:0 20
+    2300090: Layer:0 21
+    2300092: Layer:0 22
+    2300094: Layer:0 23
+    2300096: Layer:0 24
+    2300098: Layer:0 25
+    2300100: Layer:0 28
+    2300102: Layer:0 29
+    2300104: Layer:0 3
+    2300106: Layer:0 30
+    2300108: Layer:0 31
+    2300110: Layer:0 32
+    2300112: Layer:0 33
+    2300114: Layer:0 34
+    2300116: Layer:0 35
+    2300118: Layer:0 36
+    2300120: Layer:0 37
+    2300122: Layer:0 38
+    2300124: Layer:0 39
+    2300126: Layer:0 4
+    2300128: Layer:0 40
+    2300130: Layer:0 41
+    2300132: Layer:0 42
+    2300134: Layer:0 43
+    2300136: Layer:0 44
+    2300138: Layer:0 45
+    2300140: Layer:0 46
+    2300142: Layer:0 47
+    2300144: Layer:0 48
+    2300146: Layer:0 49
+    2300148: Layer:0 5
+    2300150: Layer:0 50
+    2300152: Layer:0 51
+    2300154: Layer:0 52
+    2300156: Layer:0 53
+    2300158: Layer:0 54_MeshPart0
+    2300160: Layer:0 54_MeshPart1
+    2300162: Layer:0 55_MeshPart0
+    2300164: Layer:0 55_MeshPart1
+    2300166: Layer:0 55_MeshPart2
+    2300168: Layer:0 55_MeshPart3
+    2300170: Layer:0 55_MeshPart4
+    2300172: Layer:0 55_MeshPart5
+    2300174: Layer:0 55_MeshPart6
+    2300176: Layer:0 55_MeshPart7
+    2300178: Layer:0 55_MeshPart8
+    2300180: Layer:0 55_MeshPart9
+    2300182: Layer:0 56
+    2300184: Layer:0 57
+    2300186: Layer:0 58
+    2300188: Layer:0 59
+    2300190: Layer:0 6
+    2300192: Layer:0 60
+    2300194: Layer:0 61
+    2300196: Layer:0 62
+    2300198: Layer:0 63
+    2300200: Layer:0 64
+    2300202: Layer:0 65
+    2300204: Layer:0 66
+    2300206: Layer:0 67
+    2300208: Layer:0 68
+    2300210: Layer:0 69
+    2300212: Layer:0 7
+    2300214: Layer:0 70
+    2300216: Layer:0 71
+    2300218: Layer:0 72
+    2300220: Layer:0 73
+    2300222: Layer:0 74
+    2300224: Layer:0 75
+    2300226: Layer:0 76
+    2300228: Layer:0 77
+    2300230: Layer:0 78
+    2300232: Layer:0 79
+    2300234: Layer:0 8
+    2300236: Layer:0 80
+    2300238: Layer:0 81
+    2300240: Layer:0 82
+    2300242: Layer:0 83
+    2300244: Layer:0 84
+    2300246: Layer:0 85
+    2300248: Layer:0 86
+    2300250: Layer:0 87
+    2300252: Layer:0 88
+    2300254: Layer:0 89
+    2300256: Layer:0 9
+    2300258: Layer:0 90
+    2300260: Layer:0 91
+    2300262: Layer:0 92
+    2300264: Layer:0 93
+    2300266: Layer:0 94
+    2300268: Layer:0 95
+    2300270: Layer:0 96
+    2300272: Layer:0 97
+    2300274: Layer:0 98
+    2300276: Layer:0 99_MeshPart0
+    2300278: Layer:0 99_MeshPart1
+    2300280: Spring001
+    2300282: springBtmPlate
+    2300284: springTopPlate
+    2300286: thickCyl001
+    2300288: thickCyl002
+    2300290: thickCyl003
+    2300292: thickCyl004
+    2300294: thickCyl005
+    2300296: thickCyl007
+    2300298: thinCyl001
+    2300300: thinCyl002
+    2300302: thinCyl003
+    2300304: thinCyl004
+    2300306: thinCyl005
+    2300308: thinCyl007
+    3300000: 3armPlate
+    3300002: base
+    3300004: basebase
+    3300006: baseConnectingPlate
+    3300008: btmCirclePlateLg
+    3300010: btmCirclePlateSm
+    3300012: circlePlate
+    3300014: Cylinder001
+    3300016: Cylinder002
+    3300018: Cylinder003
+    3300020: horizCylHinge001
+    3300022: horizCylHinge002
+    3300024: horizCylHinge003
+    3300026: horizontalCylinders001
+    3300028: horizontalCylinders002
+    3300030: horizontalCylinders003
+    3300032: ipt2_shell
+    3300034: Layer:0
+    3300036: Layer:0 1
+    3300038: Layer:0 10
+    3300040: Layer:0 100
+    3300042: Layer:0 101
+    3300044: Layer:0 102
+    3300046: Layer:0 103
+    3300048: Layer:0 104_MeshPart0
+    3300050: Layer:0 104_MeshPart1
+    3300052: Layer:0 104_MeshPart2
+    3300054: Layer:0 104_MeshPart3
+    3300056: Layer:0 104_MeshPart4
+    3300058: Layer:0 104_MeshPart5
+    3300060: Layer:0 104_MeshPart6
+    3300062: Layer:0 105
+    3300064: Layer:0 106
+    3300066: Layer:0 107
+    3300068: Layer:0 11
+    3300070: Layer:0 12
+    3300072: Layer:0 13
+    3300074: Layer:0 14
+    3300076: Layer:0 15
+    3300078: Layer:0 16
+    3300080: Layer:0 17
+    3300082: Layer:0 18
+    3300084: Layer:0 19
+    3300086: Layer:0 2
+    3300088: Layer:0 20
+    3300090: Layer:0 21
+    3300092: Layer:0 22
+    3300094: Layer:0 23
+    3300096: Layer:0 24
+    3300098: Layer:0 25
+    3300100: Layer:0 28
+    3300102: Layer:0 29
+    3300104: Layer:0 3
+    3300106: Layer:0 30
+    3300108: Layer:0 31
+    3300110: Layer:0 32
+    3300112: Layer:0 33
+    3300114: Layer:0 34
+    3300116: Layer:0 35
+    3300118: Layer:0 36
+    3300120: Layer:0 37
+    3300122: Layer:0 38
+    3300124: Layer:0 39
+    3300126: Layer:0 4
+    3300128: Layer:0 40
+    3300130: Layer:0 41
+    3300132: Layer:0 42
+    3300134: Layer:0 43
+    3300136: Layer:0 44
+    3300138: Layer:0 45
+    3300140: Layer:0 46
+    3300142: Layer:0 47
+    3300144: Layer:0 48
+    3300146: Layer:0 49
+    3300148: Layer:0 5
+    3300150: Layer:0 50
+    3300152: Layer:0 51
+    3300154: Layer:0 52
+    3300156: Layer:0 53
+    3300158: Layer:0 54_MeshPart0
+    3300160: Layer:0 54_MeshPart1
+    3300162: Layer:0 55_MeshPart0
+    3300164: Layer:0 55_MeshPart1
+    3300166: Layer:0 55_MeshPart2
+    3300168: Layer:0 55_MeshPart3
+    3300170: Layer:0 55_MeshPart4
+    3300172: Layer:0 55_MeshPart5
+    3300174: Layer:0 55_MeshPart6
+    3300176: Layer:0 55_MeshPart7
+    3300178: Layer:0 55_MeshPart8
+    3300180: Layer:0 55_MeshPart9
+    3300182: Layer:0 56
+    3300184: Layer:0 57
+    3300186: Layer:0 58
+    3300188: Layer:0 59
+    3300190: Layer:0 6
+    3300192: Layer:0 60
+    3300194: Layer:0 61
+    3300196: Layer:0 62
+    3300198: Layer:0 63
+    3300200: Layer:0 64
+    3300202: Layer:0 65
+    3300204: Layer:0 66
+    3300206: Layer:0 67
+    3300208: Layer:0 68
+    3300210: Layer:0 69
+    3300212: Layer:0 7
+    3300214: Layer:0 70
+    3300216: Layer:0 71
+    3300218: Layer:0 72
+    3300220: Layer:0 73
+    3300222: Layer:0 74
+    3300224: Layer:0 75
+    3300226: Layer:0 76
+    3300228: Layer:0 77
+    3300230: Layer:0 78
+    3300232: Layer:0 79
+    3300234: Layer:0 8
+    3300236: Layer:0 80
+    3300238: Layer:0 81
+    3300240: Layer:0 82
+    3300242: Layer:0 83
+    3300244: Layer:0 84
+    3300246: Layer:0 85
+    3300248: Layer:0 86
+    3300250: Layer:0 87
+    3300252: Layer:0 88
+    3300254: Layer:0 89
+    3300256: Layer:0 9
+    3300258: Layer:0 90
+    3300260: Layer:0 91
+    3300262: Layer:0 92
+    3300264: Layer:0 93
+    3300266: Layer:0 94
+    3300268: Layer:0 95
+    3300270: Layer:0 96
+    3300272: Layer:0 97
+    3300274: Layer:0 98
+    3300276: Layer:0 99_MeshPart0
+    3300278: Layer:0 99_MeshPart1
+    3300280: Spring001
+    3300282: springBtmPlate
+    3300284: springTopPlate
+    3300286: thickCyl001
+    3300288: thickCyl002
+    3300290: thickCyl003
+    3300292: thickCyl004
+    3300294: thickCyl005
+    3300296: thickCyl007
+    3300298: thinCyl001
+    3300300: thinCyl002
+    3300302: thinCyl003
+    3300304: thinCyl004
+    3300306: thinCyl005
+    3300308: thinCyl007
+    4300000: Layer:0_MeshPart0
+    4300002: Layer:0_MeshPart1
+    4300004: Layer:0
+    4300006: Layer:0
+    4300008: Layer:0
+    4300010: Layer:0
+    4300012: Layer:0_MeshPart0
+    4300014: Layer:0_MeshPart1
+    4300016: Layer:0_MeshPart2
+    4300018: Layer:0_MeshPart3
+    4300020: Layer:0_MeshPart4
+    4300022: Layer:0_MeshPart5
+    4300024: Layer:0_MeshPart6
+    4300026: Layer:0
+    4300028: Layer:0
+    4300030: Layer:0
+    4300032: Layer:0
+    4300034: Layer:0
+    4300036: Layer:0
+    4300038: Layer:0
+    4300040: Layer:0
+    4300042: Layer:0
+    4300044: Layer:0
+    4300046: Layer:0
+    4300048: Layer:0
+    4300050: Layer:0
+    4300052: Layer:0
+    4300054: Layer:0
+    4300056: Layer:0
+    4300058: Layer:0
+    4300060: Layer:0
+    4300062: Layer:0
+    4300064: Layer:0
+    4300066: Layer:0
+    4300068: Layer:0
+    4300070: Layer:0
+    4300072: Layer:0
+    4300074: Layer:0
+    4300076: Layer:0
+    4300078: Layer:0
+    4300080: Layer:0
+    4300082: Layer:0
+    4300084: Layer:0
+    4300086: Layer:0
+    4300088: Layer:0
+    4300090: Layer:0
+    4300092: Layer:0
+    4300094: Layer:0
+    4300096: Layer:0
+    4300098: Layer:0
+    4300100: Layer:0
+    4300102: Layer:0
+    4300104: Layer:0
+    4300106: Layer:0
+    4300108: Layer:0
+    4300110: Layer:0
+    4300112: Layer:0
+    4300114: Layer:0
+    4300116: Layer:0
+    4300118: Layer:0
+    4300120: Layer:0
+    4300122: Layer:0
+    4300124: Layer:0
+    4300126: Layer:0
+    4300128: Layer:0
+    4300130: Layer:0
+    4300132: Layer:0
+    4300134: Layer:0
+    4300136: Layer:0_MeshPart0
+    4300138: Layer:0_MeshPart1
+    4300140: Layer:0_MeshPart0
+    4300142: Layer:0_MeshPart1
+    4300144: Layer:0_MeshPart2
+    4300146: Layer:0_MeshPart3
+    4300148: Layer:0_MeshPart4
+    4300150: Layer:0_MeshPart5
+    4300152: Layer:0_MeshPart6
+    4300154: Layer:0_MeshPart7
+    4300156: Layer:0_MeshPart8
+    4300158: Layer:0_MeshPart9
+    4300160: Layer:0
+    4300162: Layer:0
+    4300164: Layer:0
+    4300166: Layer:0
+    4300168: Layer:0
+    4300170: Layer:0
+    4300172: Layer:0
+    4300174: Layer:0
+    4300176: Layer:0
+    4300178: Layer:0
+    4300180: Layer:0
+    4300182: Layer:0
+    4300184: Layer:0
+    4300186: Layer:0
+    4300188: Layer:0
+    4300190: Layer:0
+    4300192: Layer:0
+    4300194: Layer:0
+    4300196: Layer:0
+    4300198: Layer:0
+    4300200: Layer:0
+    4300202: Layer:0
+    4300204: Layer:0
+    4300206: Layer:0
+    4300208: Layer:0
+    4300210: Layer:0
+    4300212: Layer:0
+    4300214: Layer:0
+    4300216: Layer:0
+    4300218: Layer:0
+    4300220: Layer:0
+    4300222: Layer:0
+    4300224: Layer:0
+    4300226: Layer:0
+    4300228: Layer:0
+    4300230: Layer:0
+    4300232: Layer:0
+    4300234: Layer:0
+    4300236: Layer:0
+    4300238: Layer:0
+    4300240: Layer:0
+    4300242: Layer:0
+    4300244: Layer:0
+    4300246: basebase
+    4300248: btmCirclePlateSm
+    4300250: ipt2_shell
+    4300252: base
+    4300254: baseConnectingPlate
+    4300256: springTopPlate
+    4300258: Cylinder001
+    4300260: Cylinder002
+    4300262: Cylinder003
+    4300264: Spring001
+    4300266: btmCirclePlateLg
+    4300268: thickCyl007
+    4300270: thinCyl002
+    4300272: thinCyl001
+    4300274: thickCyl005
+    4300276: thickCyl004
+    4300278: thinCyl003
+    4300280: horizontalCylinders001
+    4300282: horizCylHinge001
+    4300284: horizontalCylinders002
+    4300286: horizCylHinge002
+    4300288: horizontalCylinders003
+    4300290: horizCylHinge003
+    4300292: springBtmPlate
+    4300294: circlePlate
+    4300296: thickCyl003
+    4300298: thickCyl002
+    4300300: thickCyl001
+    4300302: thinCyl004
+    4300304: thinCyl005
+    4300306: thinCyl007
+    4300308: 3armPlate
+    4300310: Line001
+    7400000: IPT2-loop
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Line001
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: IPT2-loop
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 1000
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: basebase
+        weight: 1
+      - path: basebase/btmCirclePlateSm
+        weight: 1
+      - path: Bone001
+        weight: 1
+      - path: Bone001/Bone002
+        weight: 1
+      - path: btmCirclePlateLg
+        weight: 1
+      - path: btmCirclePlateLg/Dummy002
+        weight: 1
+      - path: btmCirclePlateLg/horizontalCylinders001
+        weight: 1
+      - path: btmCirclePlateLg/horizontalCylinders001/horizCylHinge001
+        weight: 1
+      - path: btmCirclePlateLg/horizontalCylinders002
+        weight: 1
+      - path: btmCirclePlateLg/horizontalCylinders002/horizCylHinge002
+        weight: 1
+      - path: btmCirclePlateLg/horizontalCylinders003
+        weight: 1
+      - path: btmCirclePlateLg/horizontalCylinders003/horizCylHinge003
+        weight: 1
+      - path: btmCirclePlateLg/thickCyl004
+        weight: 1
+      - path: btmCirclePlateLg/thickCyl005
+        weight: 1
+      - path: btmCirclePlateLg/thickCyl007
+        weight: 1
+      - path: btmCirclePlateLg/thinCyl001
+        weight: 1
+      - path: btmCirclePlateLg/thinCyl002
+        weight: 1
+      - path: btmCirclePlateLg/thinCyl003
+        weight: 1
+      - path: INVENTOR-MODEL
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 1
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 2
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 3
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 4
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 5
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 6
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 7
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 8
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 9
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 10
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 11
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 12
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 13
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 14
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 15
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 16
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 17
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 18
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 19
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 20
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 21
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 22
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 23
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 24
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 25
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 26
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 27
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 28
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 29
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 30
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 31
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 32
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 33
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 34
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 35
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 36
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 37
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 38
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 39
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 40
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 41
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 42
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 43
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 44
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 45
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 46
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 47
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 48
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 49
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 50
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 51
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 52
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 53
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 54
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 54/Layer:0 54_MeshPart0
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 54/Layer:0 54_MeshPart1
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 55
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 55/Layer:0 55_MeshPart0
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 55/Layer:0 55_MeshPart1
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 55/Layer:0 55_MeshPart2
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 55/Layer:0 55_MeshPart3
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 55/Layer:0 55_MeshPart4
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 55/Layer:0 55_MeshPart5
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 55/Layer:0 55_MeshPart6
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 55/Layer:0 55_MeshPart7
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 55/Layer:0 55_MeshPart8
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 55/Layer:0 55_MeshPart9
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 56
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 57
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 58
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 59
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 60
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 61
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 62
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 63
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 64
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 65
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 66
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 67
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 68
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 69
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 70
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 71
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 72
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 73
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 74
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 75
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 76
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 77
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 78
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 79
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 80
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 81
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 82
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 83
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 84
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 85
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 86
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 87
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 88
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 89
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 90
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 91
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 92
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 93
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 94
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 95
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 96
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 97
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 98
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 99
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 99/Layer:0 99_MeshPart0
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 99/Layer:0 99_MeshPart1
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 100
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 101
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 102
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 103
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 104
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 104/Layer:0 104_MeshPart0
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 104/Layer:0 104_MeshPart1
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 104/Layer:0 104_MeshPart2
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 104/Layer:0 104_MeshPart3
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 104/Layer:0 104_MeshPart4
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 104/Layer:0 104_MeshPart5
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 104/Layer:0 104_MeshPart6
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 105
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 106
+        weight: 1
+      - path: INVENTOR-MODEL/Layer:0 107
+        weight: 1
+      - path: ipt2_shell
+        weight: 1
+      - path: ipt2_shell/base
+        weight: 1
+      - path: ipt2_shell/base/baseConnectingPlate
+        weight: 1
+      - path: ipt2_shell/base/baseConnectingPlate/Dummy001
+        weight: 1
+      - path: ipt2_shell/base/baseConnectingPlate/Dummy001/Dummy003
+        weight: 1
+      - path: ipt2_shell/base/baseConnectingPlate/springTopPlate
+        weight: 1
+      - path: ipt2_shell/base/baseConnectingPlate/springTopPlate/Cylinder001
+        weight: 1
+      - path: ipt2_shell/base/baseConnectingPlate/springTopPlate/Cylinder002
+        weight: 1
+      - path: ipt2_shell/base/baseConnectingPlate/springTopPlate/Cylinder003
+        weight: 1
+      - path: Line001
+        weight: 1
+      - path: shellPOS_dummy
+        weight: 1
+      - path: shellPOS_dummy/springBtmPlate
+        weight: 1
+      - path: shellPOS_dummy/springBtmPlate/circlePlate
+        weight: 1
+      - path: shellPOS_dummy/springBtmPlate/circlePlate/3armPlate
+        weight: 1
+      - path: shellPOS_dummy/springBtmPlate/circlePlate/thickCyl001
+        weight: 1
+      - path: shellPOS_dummy/springBtmPlate/circlePlate/thickCyl002
+        weight: 1
+      - path: shellPOS_dummy/springBtmPlate/circlePlate/thickCyl003
+        weight: 1
+      - path: shellPOS_dummy/springBtmPlate/circlePlate/thinCyl004
+        weight: 1
+      - path: shellPOS_dummy/springBtmPlate/circlePlate/thinCyl005
+        weight: 1
+      - path: shellPOS_dummy/springBtmPlate/circlePlate/thinCyl007
+        weight: 1
+      - path: Spring001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
