@@ -16,10 +16,11 @@ public class PlayVideo : MonoBehaviour {
 	}
 
 	public void PlayM (){
-
+#if UNITY_IOS
 		if(Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer){
 			Handheld.PlayFullScreenMovie (movieName, Color.black, FullScreenMovieControlMode.Full, FullScreenMovieScalingMode.AspectFit);
 		}
+#endif
 	}
 
 }
