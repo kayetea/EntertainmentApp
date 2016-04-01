@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
-
+using UnityEngine.Analytics;
 
 public class SendEmail : MonoBehaviour
 {
@@ -23,9 +23,18 @@ public class SendEmail : MonoBehaviour
 		//body of the mail which consists of Device Model and its Operating System
 		BuildBody();
 		string body = MyEscapeURL(bodyText);
-		//Open the Default Mail App
-		Application.OpenURL ("mailto:" + email + "?subject=" + subject + "&body=" + body);
 
+        //REPORT TO ANALYTICS
+        /*Analytics.CustomEvent("Sent Email", new Dictionary<string, object>
+        {
+            { "email", email },
+            { "clientName", clientName }
+        });*/
+
+        Debug.Log(Analytics.CustomEvent("Sent Email", new Dictionary<string, object> { { "email", email }, {"name", clientName.GetComponent<Text>().text} }));
+        
+        //Open the Default Mail App
+        Application.OpenURL ("mailto:" + email + "?subject=" + subject + "&body=" + body);
 
 	}  
 	
