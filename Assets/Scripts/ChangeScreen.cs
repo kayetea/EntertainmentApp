@@ -67,7 +67,7 @@ public class ChangeScreen : MonoBehaviour {
 		//~~~~~~~~~~ADD STRING TO LIST AND MOVE AND CREATE PAGES~~~~~~~~~~
 		prevStrings.Add(myString);
 
-        
+        googleAnalytics.LogScreen(myString);
     }
 
 	IEnumerator DelayMoveAndSet(string myString){
@@ -89,8 +89,6 @@ public class ChangeScreen : MonoBehaviour {
 		//move new screen to origin and assign as current
 		newScreen.GetComponent<RectTransform>().anchoredPosition = origin;
 		currentScreen = newScreen;
-
-        googleAnalytics.LogScreen(panelName);
 
         //~~~~~~~~~~CLEAN UP ANY PREVIOUS SCENE LEFTOVER CONTENT~~~~~~~~~~
 
