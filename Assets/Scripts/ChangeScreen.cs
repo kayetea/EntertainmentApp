@@ -7,6 +7,7 @@ public class ChangeScreen : MonoBehaviour {
 
 	private GameObject currentScreen;
 	public GameObject newScreen;
+    public GoogleAnalyticsV4 googleAnalytics;
 
 	private string currentString;
 	private List<string> prevStrings = new List<string> ();
@@ -29,6 +30,9 @@ public class ChangeScreen : MonoBehaviour {
 	void Start () {
 		currentScreen = GameObject.Find("HomePanel");
 		prevStrings.Add ("HomePanel:null");
+
+        googleAnalytics.StartSession();
+        googleAnalytics.LogScreen("Main Menu");
 	}
 
 
@@ -63,7 +67,8 @@ public class ChangeScreen : MonoBehaviour {
 		//~~~~~~~~~~ADD STRING TO LIST AND MOVE AND CREATE PAGES~~~~~~~~~~
 		prevStrings.Add(myString);
 
-	}
+        
+    }
 
 	IEnumerator DelayMoveAndSet(string myString){
 		yield return new WaitForSeconds(1f);
@@ -85,12 +90,12 @@ public class ChangeScreen : MonoBehaviour {
 		newScreen.GetComponent<RectTransform>().anchoredPosition = origin;
 		currentScreen = newScreen;
 
-		
-		
-		//~~~~~~~~~~CLEAN UP ANY PREVIOUS SCENE LEFTOVER CONTENT~~~~~~~~~~
-		
-		//remove any scrollstacks using a function in the LoopImageStack script
-		transform.Find("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().RemoveStacks();
+        googleAnalytics.LogScreen(panelName);
+
+        //~~~~~~~~~~CLEAN UP ANY PREVIOUS SCENE LEFTOVER CONTENT~~~~~~~~~~
+
+        //remove any scrollstacks using a function in the LoopImageStack script
+        transform.Find("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().RemoveStacks();
 		transform.Find("EnvironmentPanel/Scroll Images").GetComponent<LoopImageStack>().enabled = false;
 		gForce.SetActive(true);
 		Resources.UnloadUnusedAssets ();
